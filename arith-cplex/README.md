@@ -5,7 +5,7 @@ Compilation
 -----------
 
 This project requires `CPLEX` libraries and optionally also uses the `SymPy` package in `Python` for evaluating expressions (can be turned off with `--noprintanswer`). To compile:
-    
+ 
 * copy `Makefile-SAMPLE` to your own local `Makefile` (do not check this
   in, as this will be computer specific)
 
@@ -63,7 +63,16 @@ NET 14 non-negative, integer-valued solutions found out of 22 total solutions
 
 **Running the CPLEX model on all `*.txt` files in a folder**
 
-For experimentation, the included `runall.sh` script may be used to run the CPLEX model on all `*.txt` files included in a folder. The output for each arithmetic problem file `file.txt` is then captured in `file.txt.out`.
+For experimentation, the included `runall.sh` script in the `scripts` folder may be used to run the CPLEX model on all `*.txt` files included in a folder. The output for each arithmetic problem file `file.txt` is then captured in `file.txt.out`.
 
-USAGE: `runall.sh datafolder`
+Usage: `./runall.sh datafolder`
+
+
+**Splitting an joint input file for a dataset into multiple `*.txt` files for `arithCplex`**
+
+The `splitQuestions.sh` script in the `scripts` folder may be used to split a joint file, such as `emnlp.curated.ILP.input`, into individual `*.txt` files, one per question, that can be fed to `arithCplex`. The output is a set of files in `outdir` named `q000.txt, q001.txt, q002.txt,` and so on.
+
+Usage: `splitQuestions.sh unsplitInputFile outdir`
+
+Note that this is a very basic script that assumes a uniform format in the joint file, in terms of the number of lines (including empty lines) per question (default 9) and the number of lines to discard per question (currently 2). These may need to be adjusted manually if the joint input file format changes.
 
