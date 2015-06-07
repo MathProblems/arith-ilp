@@ -68,7 +68,7 @@ For experimentation, the included `runall.sh` script in the `scripts` folder may
 Usage: `./runall.sh datafolder`
 
 
-**Splitting an joint input file for a dataset into multiple `*.txt` files for `arithCplex`**
+**Splitting a joint input file for a dataset into multiple `*.txt` files for `arithCplex`**
 
 The `splitQuestions.sh` script in the `scripts` folder may be used to split a joint file, such as `emnlp.curated.ILP.input`, into individual `*.txt` files, one per question, that can be fed to `arithCplex`. The output is a set of files in `outdir` named `q000.txt, q001.txt, q002.txt,` and so on.
 
