@@ -2,7 +2,7 @@
 CPLEX based Integer Linear Programming models for arithmetic problems
 
 Compilation
-===========
+-----------
 
 This project requires `CPLEX` libraries and optionally also uses the `SymPy` package in `Python` for evaluating expressions (can be turned off with `--noprintanswer`). To compile:
     
@@ -17,10 +17,9 @@ This should produce an executable named `arithCplex`.
 
 
 Usage
-=====
+-----
 
-Running the CPLEX model on one input
-------------------------------------
+**Running the CPLEX model on one input**
 
 Type `arithCplex -h` for a list of all options and their default values. Options include multi-threaded runs (e.g., `--threads 8`), the desired number of solutions (e.g., `-s 100`), disabling expression evaluation using `Python`, etc.
 
@@ -62,8 +61,7 @@ NET 14 non-negative, integer-valued solutions found out of 22 total solutions
 ```
 
 
-Running the CPLEX model on all `*.txt` files in a folder
---------------------------------------------------------
+**Running the CPLEX model on all `*.txt` files in a folder**
 
 For experimentation, the included `runall.sh` script may be used to run the CPLEX model on all `*.txt` files included in a folder. The output for each arithmetic problem file `file.txt` is then captured in `file.txt.out`.
 
