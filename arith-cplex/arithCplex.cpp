@@ -815,28 +815,28 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
 
   // (optional) simplicity: NoTwoConsecutiveMultiplications
   if (consWts["NoTwoConsecutiveMultiplications"] != 0) {
-    for (int i=2; i<n-1; i++) {
+    for (int i=2; i<n-2; i++) {
       IloNumVar slack(env);
-      model.add((x[i] == l+k+2) + (x[i+1] == l+k+2) <= 1 + slack);
+      model.add((x[i] == l+k+2) + (x[i+1] == l+k+2) + (x[i+2] == l+k+2) <= 1 + slack);
       objective += slack * consWts["NoTwoConsecutiveMultiplications"];
     }
   }
 
   // (optional) simplicity: NoTwoConsecutiveDivisions
   if (consWts["NoTwoConsecutiveDivisions"] != 0) {
-    for (int i=2; i<n-1; i++) {
+    for (int i=2; i<n-2; i++) {
       IloNumVar slack(env);
-      model.add((x[i] == l+k+3) + (x[i+1] == l+k+3) <= 1 + slack);
+      model.add((x[i] == l+k+3) + (x[i+1] == l+k+3) + (x[i+2] == l+k+3) <= 1 + slack);
       objective += slack * consWts["NoTwoConsecutiveDivisions"];
     }
   }
 
   // (optional) simplicity: NoConsecutiveMultAndDiv
   if (consWts["NoConsecutiveMultAndDiv"] != 0) {
-    for (int i=2; i<n-1; i++) {
+    for (int i=2; i<n-2; i++) {
       IloNumVar slack1(env), slack2(env);
-      model.add((x[i] == l+k+2) + (x[i+1] == l+k+3) <= 1 + slack1);
-      model.add((x[i] == l+k+3) + (x[i+1] == l+k+2) <= 1 + slack2);
+      model.add((x[i] == l+k+2) + (x[i+1] == l+k+2) + (x[i+2] == l+k+3) <= 1 + slack1);
+      model.add((x[i] == l+k+3) + (x[i+1] == l+k+3) + (x[i+2] == l+k+2) <= 1 + slack2);
       objective += (slack1 + slack2) * consWts["NoConsecutiveMultAndDiv"];
     }
   }
