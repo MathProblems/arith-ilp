@@ -139,27 +139,24 @@ int main (int argc, char **argv) {
     parseCommandLine(argc, argv);
     printCommandLine(argc, argv);
 
-    // set default constraint weights; may be overridden by config file
-    consWts["NonOperatorsAtMostOnce"]           = infWt;
-    consWts["StackDepthUpperBound"]             = infWt;
-    consWts["ExactlyOneUnknown"]                = infWt;
-    consWts["NoTwoConsecutiveMultiplications"]  = infWt;
-    consWts["NoTwoConsecutiveDivisions"]        = infWt;
-    consWts["NoNegatives"]                      = infWt;
-
-    consWts["TypeConsistency"]                  = highWt;
-    consWts["EqualityFirstOrLast"]              = highWt;
-    consWts["IntConstantsImplyIntUnknown"]      = highWt;
-
-    consWts["PreserveOrderingInText"]           = midWt;
-
-    consWts["UnknownFirstOrLast"]               = lowWt;
-    consWts["EqualityNextToUnknown"]            = lowWt;
-
-    consWts["HasAddition"]                      = zeroWt;
-    consWts["HasSubtraction"]                   = zeroWt;
-    consWts["HasMultiplication"]                = zeroWt;
-    consWts["HasDivision"]                      = zeroWt;
+    // set all default constraint weights as zero
+    consWts["NonOperatorsAtMostOnce"]           = 0;
+    consWts["StackDepthUpperBound"]             = 0;
+    consWts["ExactlyOneUnknown"]                = 0;
+    consWts["NoTwoConsecutiveMultiplications"]  = 0;  // note: this may be disabled if word "dozen" appears
+    consWts["NoTwoConsecutiveDivisions"]        = 0;
+    consWts["NoConsecutiveMultAndDiv"]          = 0;
+    consWts["NoNegatives"]                      = 0;
+    consWts["TypeConsistency"]                  = 0;
+    consWts["EqualityFirstOrLast"]              = 0;
+    consWts["IntConstantsImplyIntUnknown"]      = 0;
+    consWts["PreserveOrderingInText"]           = 0;
+    consWts["UnknownFirstOrLast"]               = 0;
+    consWts["EqualityNextToUnknown"]            = 0;
+    consWts["HasAddition"]                      = 0;
+    consWts["HasSubtraction"]                   = 0;
+    consWts["HasMultiplication"]                = 0;
+    consWts["HasDivision"]                      = 0;
 
     // parse config file defining constraint weights
     parseConfigFile(param_wts_config_file);
@@ -167,7 +164,8 @@ int main (int argc, char **argv) {
     cout << "Starting IloTimer" << endl;
     timer.start();
 
-    // parse arithmetic model parameters
+    // parse arithmetic model parameters; note: this may override previously
+    // set constraint weights
     if (strlen(arith_filename) > 0)
       parseInputFile(arith_filename);
 
@@ -816,19 +814,29 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
 
   // (optional) simplicity: NoTwoConsecutiveMultiplications
   if (consWts["NoTwoConsecutiveMultiplications"] != 0) {
-    for (int i=2; i<n-2; i++) {
+    for (int i=2; i<n-1; i++) {
       IloNumVar slack(env);
-      model.add((x[i] == l+k+2) + (x[i+1] == l+k+2) + (x[i+2] == l+k+2) <= 1 + slack);
+      model.add((x[i] == l+k+2) + (x[i+1] == l+k+2) <= 1 + slack);
       objective += slack * consWts["NoTwoConsecutiveMultiplications"];
     }
   }
 
   // (optional) simplicity: NoTwoConsecutiveDivisions
   if (consWts["NoTwoConsecutiveDivisions"] != 0) {
-    for (int i=2; i<n-2; i++) {
+    for (int i=2; i<n-1; i++) {
       IloNumVar slack(env);
-      model.add((x[i] == l+k+3) + (x[i+1] == l+k+3) + (x[i+2] == l+k+3) <= 1 + slack);
+      model.add((x[i] == l+k+3) + (x[i+1] == l+k+3) <= 1 + slack);
       objective += slack * consWts["NoTwoConsecutiveDivisions"];
+    }
+  }
+
+  // (optional) simplicity: NoConsecutiveMultAndDiv
+  if (consWts["NoConsecutiveMultAndDiv"] != 0) {
+    for (int i=2; i<n-1; i++) {
+      IloNumVar slack1(env), slack2(env);
+      model.add((x[i] == l+k+2) + (x[i+1] == l+k+3) <= 1 + slack1);
+      model.add((x[i] == l+k+3) + (x[i+1] == l+k+2) <= 1 + slack2);
+      objective += (slack1 + slack2) * consWts["NoConsecutiveMultAndDiv"];
     }
   }
 
