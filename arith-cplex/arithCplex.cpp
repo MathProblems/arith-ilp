@@ -25,7 +25,9 @@
 #include <stack>
 #include <vector>
 
-#include <ilcplex/ilocplex.h>
+#include <libconfig.h++>  // libconfig for reading configuration files in C++
+
+#include <ilcplex/ilocplex.h>  // cplex libraries
 
 ILOSTLBEGIN
 
@@ -50,9 +52,10 @@ inline bool isInt(const double x) {
 }
 
 // forward declarations of methods
-void parseCommandLine(int argc, char **argv);
-void printCommandLine(int argc, char **argv);
-void parseInputFile(const string infilename);
+void parseCommandLine(const int argc, const char * const * const argv);
+void printCommandLine(const int argc, const char * const * const argv);
+void parseConfigFile(const string & weightsConfigFilename);
+void parseInputFile(const string & infilename);
 void setCplexParameters(IloCplex cplex);
 void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars, IloRangeArray rngs);
 void prettyPrintSoln(const IloIntArray intvals);
@@ -85,34 +88,17 @@ char mip_filename[1024] = "";
 char arith_filename[1024] = "";  // file to import arithmetic model parameters from
 
 // parameters defining what weight (possibly "infinite") to use with each arithmetic constraint
-const int lowWt  = 1;
-const int midWt  = 5;
-const int highWt = 10;
-const int infWt  = 1000000;
+int zeroWt = 0;
+int lowWt  = 1;
+int midWt  = 5;
+int highWt = 10;
+int infWt  = 1000000;
 
-int wtNonOperatorsAtMostOnce           = infWt;
-int wtStackDepthUpperBound             = infWt;
-int wtExactlyOneUnknown                = infWt;
-int wtNoTwoConsecutiveMultiplications  = infWt;
-int wtNoTwoConsecutiveDivisions        = infWt;
-int wtNoNegatives                      = infWt;
-
-int wtTypeConsistency                  = highWt;
-int wtEqualityFirstOrLast              = highWt;
-int wtIntConstantsImplyIntUnknown      = highWt;
-
-int wtPreserveOrderingInText           = midWt;
-
-int wtUnknownFirstOrLast               = lowWt;
-int wtEqualityNextToUnknown            = lowWt;
-
-int wtHasAddition                      = 0; // lowWt;
-int wtHasSubtraction                   = 0; // lowWt;
-int wtHasMultiplication                = 0; // lowWt;
-int wtHasDivision                      = 0; // lowWt;
+map<string,int> consWts;  // weights of various constraints
 
 // cplex parameters: defaults
 int    param_nsolutions       = 25;
+string param_wts_config_file  = "weights.conf";
 bool   param_printexpr        = true;
 bool   param_printanswer      = true;
 bool   param_printsoln        = false;
@@ -152,6 +138,31 @@ int main (int argc, char **argv) {
 
     parseCommandLine(argc, argv);
     printCommandLine(argc, argv);
+
+    // set default constraint weights; may be overridden by config file
+    consWts["NonOperatorsAtMostOnce"]           = infWt;
+    consWts["StackDepthUpperBound"]             = infWt;
+    consWts["ExactlyOneUnknown"]                = infWt;
+    consWts["NoTwoConsecutiveMultiplications"]  = infWt;
+    consWts["NoTwoConsecutiveDivisions"]        = infWt;
+    consWts["NoNegatives"]                      = infWt;
+
+    consWts["TypeConsistency"]                  = highWt;
+    consWts["EqualityFirstOrLast"]              = highWt;
+    consWts["IntConstantsImplyIntUnknown"]      = highWt;
+
+    consWts["PreserveOrderingInText"]           = midWt;
+
+    consWts["UnknownFirstOrLast"]               = lowWt;
+    consWts["EqualityNextToUnknown"]            = lowWt;
+
+    consWts["HasAddition"]                      = zeroWt;
+    consWts["HasSubtraction"]                   = zeroWt;
+    consWts["HasMultiplication"]                = zeroWt;
+    consWts["HasDivision"]                      = zeroWt;
+
+    // parse config file defining constraint weights
+    parseConfigFile(param_wts_config_file);
 
     cout << "Starting IloTimer" << endl;
     timer.start();
@@ -260,7 +271,7 @@ int main (int argc, char **argv) {
             const bool isCorrect = (fabs(answerValue - trueAnswer) < epsilon);
             const bool isAnswerNegative = answerValue < 0;
             const bool isAnswerInteger = isInt(answerValue);
-            if (!isAnswerNegative && (!allIntConstants || wtIntConstantsImplyIntUnknown == 0 || isAnswerInteger)) {
+            if (!isAnswerNegative && (!allIntConstants || consWts["IntConstantsImplyIntUnknown"] == 0 || isAnswerInteger)) {
               ++nAllowedSolutionsFound;
               cout << "EXPR: " << isCorrect
                    << " | " << (isAnswerNegative ? "NEG" : "POS")
@@ -277,7 +288,7 @@ int main (int argc, char **argv) {
         }
       }
       const string solnProperty = string(" non-negative")
-        + (allIntConstants && wtIntConstantsImplyIntUnknown != 0 ? ", integer-valued " : " ");
+        + (allIntConstants && consWts["IntConstantsImplyIntUnknown"] != 0 ? ", integer-valued " : " ");
       cout << "NET " << nAllowedSolutionsFound << solnProperty << "solutions found out of "
            << nSolutionsFound << " total solutions" << endl;
     }
@@ -340,6 +351,7 @@ void printUsage(const char *progname, ostream & str = cout) {
        << endl
        << "   -s num            same as --solutions num" << endl
        << "   --solutions num   number of solutions to find (default: 25)" << endl
+       << "   --wts file        config file containing weights in libconfig format (default: none)" << endl
        << "   --noprintexpr     do not print arithmetic expressions found (forces --noprintexpr; default: on)" << endl
        << "   --noprintanswer   do not print answer to arithmetic problem (default: on)" << endl
        << "   --printsoln       print solution (default: off)" << endl
@@ -354,10 +366,10 @@ void printUsage(const char *progname, ostream & str = cout) {
 } // END printUsage
 
 // parse command line arguments
-void parseCommandLine(int argc, char **argv) {
+void parseCommandLine(const int argc, const char * const * const argv) {
   bool flag_read_filename = false;
   for (int i=1; i<argc; i++) {
-    char *optionName = argv[i];
+    const char * const optionName = argv[i];
     if (!strcmp(optionName, "--help") || !strcmp(optionName, "-h")) {
       printUsage(argv[0], cout);
       exit(0);
@@ -370,6 +382,8 @@ void parseCommandLine(int argc, char **argv) {
       strcpy(param_cplexrootalg, argv[++i]);
     else if (!strcmp(optionName, "--solutions") || !strcmp(optionName, "-s"))
       param_nsolutions = atoi(argv[++i]);
+    else if (!strcmp(optionName, "--wts"))
+      param_wts_config_file = argv[++i];
     else if (!strcmp(optionName, "--noprintexpr")) {
       param_printexpr = false;
       param_printanswer = false;   // force param_printanswer to be false
@@ -410,14 +424,73 @@ void parseCommandLine(int argc, char **argv) {
   }
 }
 
-void printCommandLine(int argc, char **argv) {
+void printCommandLine(const int argc, const char * const * const argv) {
   cout << "Command line: ";
   for (int i=0; i<argc-1; i++)
     cout << argv[i] << ' ';
   cout << argv[argc-1] << endl;
 }
 
-void parseInputFile(const string infilename) {
+int getWeightByCategory(const char * const wtCategory) {
+  if (!strcmp(wtCategory, "zeroWt")) return zeroWt;
+  else if (!strcmp(wtCategory, "lowWt")) return lowWt;
+  else if (!strcmp(wtCategory, "midWt")) return midWt;
+  else if (!strcmp(wtCategory, "highWt")) return highWt;
+  else if (!strcmp(wtCategory, "infWt")) return infWt;
+  else {
+    cerr << "ERROR: weight category " << wtCategory << " not recognized." << endl;
+    exit(1);
+  }
+}
+
+void parseConfigFile(const string & weightsConfigFilename) {
+  libconfig::Config cfg;
+  cout << "Reading weights configuration file " << weightsConfigFilename << endl;
+  try {
+    cfg.readFile(weightsConfigFilename.c_str());
+  }
+  catch (const libconfig::ConfigException & e) {
+    cerr << "ERROR encountered when reading config file " << weightsConfigFilename << ": " << e.what() << endl;
+    exit(1);
+  }
+  const libconfig::Setting & root = cfg.getRoot();
+  int         tmpInt;
+  const char *tmpStr;
+
+  const libconfig::Setting & weightCategories = root["weightCategories"];
+  cout << "  weight categories:" << endl;
+  if (weightCategories.lookupValue("zeroWt", tmpInt)) {
+    zeroWt = tmpInt; cout << "    zeroWt  = " << tmpInt << endl;
+  }
+  if (weightCategories.lookupValue("lowWt", tmpInt)) {
+    lowWt = tmpInt; cout << "    lowWt  = " << tmpInt << endl;
+  }
+  if (weightCategories.lookupValue("midWt", tmpInt)) {
+    midWt = tmpInt; cout << "    midWt  = " << tmpInt << endl;
+  }
+  if (weightCategories.lookupValue("highWt", tmpInt)) {
+    highWt = tmpInt; cout << "    highWt = " << tmpInt << endl;
+  }
+  if (weightCategories.lookupValue("infWt", tmpInt)) {
+    infWt = tmpInt; cout << "    infWt  = " << tmpInt << endl;
+  }
+
+  const libconfig::Setting & constraintWeights = root["constraintWeights"];
+  cout << "  constraint weights:" << endl;
+  for (map<string,int>::const_iterator itr = consWts.begin(); itr != consWts.end(); itr++) {
+    const string & consName = itr->first;
+    if (constraintWeights.lookupValue(consName, tmpStr)) {
+      consWts[consName] = getWeightByCategory(tmpStr);
+      cout << "    " << consName << " = " << tmpStr << endl;
+    }
+    else {
+      cerr << "ERROR: constraint name " << consName << " not recognized" << endl;
+      exit(1);
+    }
+  }
+}
+
+void parseInputFile(const string & infilename) {
   cout << "Reading input from file " << infilename << endl;
   std::ifstream infile(infilename);
   string line;
@@ -503,7 +576,7 @@ void parseInputFile(const string infilename) {
     if (str == "dozen") {
       cout << "Detected object type starting with 'dozen'." << endl
            << "  Turning off NoTwoConsecutiveMultiplications constraint." << endl << endl;
-      wtNoTwoConsecutiveMultiplications = 0;
+      consWts["NoTwoConsecutiveMultiplications"] = 0;
       break;
     }
   }
@@ -677,7 +750,7 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
   model.add(u[n-2] == 0);
 
   // (optional) TypeConsistency
-  if (wtTypeConsistency == 0) {
+  if (consWts["TypeConsistency"] == 0) {
     for (int i=0; i<n; i++)
       model.add(t[i] == 0);
   }
@@ -688,7 +761,7 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
         if (constantOrUnknownType[j] != objtypeIdxNone) {  // type NONE is a wildcard
           IloNumVar slack(env);
           model.add((x[i] == j) <= (t[i] == constantOrUnknownType[j]) + slack);
-          objective += slack * wtTypeConsistency;
+          objective += slack * consWts["TypeConsistency"];
         }
       }
     }
@@ -711,66 +784,66 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
   }
 
   // (optional) NonOperatorsAtMostOnce
-  if (wtNonOperatorsAtMostOnce != 0) {
-    if (wtPreserveOrderingInText != infWt) {   // otherwise unnecessary
+  if (consWts["NonOperatorsAtMostOnce"] != 0) {
+    if (consWts["PreserveOrderingInText"] != infWt) {   // otherwise unnecessary
       for (int i=0; i<n-2; i++) {
         for (int j=i+1; j<n-1; j++) {
           IloNumVar slack(env);
           model.add((x[i] == x[j]) <= o[i] + slack);
-          objective += slack * wtNonOperatorsAtMostOnce;
+          objective += slack * consWts["NonOperatorsAtMostOnce"];
         }
       }
     }
   }
 
   // (optional) simplicity: StackDepthUpperBound
-  if (wtStackDepthUpperBound != 0) {
+  if (consWts["StackDepthUpperBound"] != 0) {
     for (int i=1; i<n-1; i++) {
       IloNumVar slack(env);
       model.add(d[i] <= maxStackDepth - 1 + slack);
-      objective += slack * wtStackDepthUpperBound;
+      objective += slack * consWts["StackDepthUpperBound"];
     }
   }
 
   // (optional) simplicity: EqualityFirstOrLast
   // In postfix, this means at least one of the operands of equality (which appears
   // always at position n-1 due to validity requirements) must not be an operator
-  if (wtEqualityFirstOrLast != 0) {
+  if (consWts["EqualityFirstOrLast"] != 0) {
     IloNumVar slack(env);
     model.add(op1o[n-1] + o[n-2] <= 1 + slack);
-    objective += slack * wtEqualityFirstOrLast;
+    objective += slack * consWts["EqualityFirstOrLast"];
   }
 
   // (optional) simplicity: NoTwoConsecutiveMultiplications
-  if (wtNoTwoConsecutiveMultiplications != 0) {
+  if (consWts["NoTwoConsecutiveMultiplications"] != 0) {
     for (int i=2; i<n-2; i++) {
       IloNumVar slack(env);
       model.add((x[i] == l+k+2) + (x[i+1] == l+k+2) + (x[i+2] == l+k+2) <= 1 + slack);
-      objective += slack * wtNoTwoConsecutiveMultiplications;
+      objective += slack * consWts["NoTwoConsecutiveMultiplications"];
     }
   }
 
   // (optional) simplicity: NoTwoConsecutiveDivisions
-  if (wtNoTwoConsecutiveDivisions != 0) {
+  if (consWts["NoTwoConsecutiveDivisions"] != 0) {
     for (int i=2; i<n-2; i++) {
       IloNumVar slack(env);
       model.add((x[i] == l+k+3) + (x[i+1] == l+k+3) + (x[i+2] == l+k+3) <= 1 + slack);
-      objective += slack * wtNoTwoConsecutiveDivisions;
+      objective += slack * consWts["NoTwoConsecutiveDivisions"];
     }
   }
 
   // (optional) simplicity: NoNegatives
-  if (wtNoNegatives != 0) {
+  if (consWts["NoNegatives"] != 0) {
     // TO-DO!!!
   }
 
   // (optional) simplicity: IntConstantsImplyIntUnknowns
-  if (wtIntConstantsImplyIntUnknown != 0) {
+  if (consWts["IntConstantsImplyIntUnknown"] != 0) {
     // TO-DO!!!
   }
 
   // (optional) PreserveOrderingInText
-  if (wtPreserveOrderingInText != 0) {
+  if (consWts["PreserveOrderingInText"] != 0) {
     // apply penalty at the entity level, not entity-pair level (otherwise it may
     // grow too quickly)
     for (int i=0; i<n-2; i++) {
@@ -778,20 +851,20 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
       for (int j=i+1; j<n-1; j++) {
         model.add(x[i] <= (x[j]-1) + (m-1)*(1-c[i]) + slack);
       }
-      objective += slack * wtPreserveOrderingInText;
+      objective += slack * consWts["PreserveOrderingInText"];
     }
   }
 
   // (optional) ExactlyOneUnknown; note: at least one unknown is a must; at most once is optional
   model.add(IloSum(u) >= 1);
-  if (wtExactlyOneUnknown != 0) {
+  if (consWts["ExactlyOneUnknown"] != 0) {
     IloNumVar slack(env);
     model.add(IloSum(u) <= 1 + slack);
-    objective += slack * wtExactlyOneUnknown;
+    objective += slack * consWts["ExactlyOneUnknown"];
   }
 
   // (optional) UnknownFirstOrLast
-  if (wtUnknownFirstOrLast != 0) {
+  if (consWts["UnknownFirstOrLast"] != 0) {
     IloIntVar y0(env, 0, 1);
     IloIntVar y1(env, 0, 1);
     model.add(y0 <= u[0]);
@@ -800,50 +873,50 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
     model.add(y1 <= u[n-2]);
     IloNumVar slack(env);
     model.add(y0 + y1 + slack >= 1);
-    objective += slack * wtUnknownFirstOrLast;
+    objective += slack * consWts["UnknownFirstOrLast"];
   }
 
   // (optional) EqualityNextToUnknown
-  if (wtEqualityNextToUnknown != 0) {
+  if (consWts["EqualityNextToUnknown"] != 0) {
     for (int i=2; i<n; i++) {
       IloNumVar slack(env);
       model.add(x[i] - m + 2 <= u[i-1] + op1u[i] + slack);
-      objective += slack * wtEqualityNextToUnknown;
+      objective += slack * consWts["EqualityNextToUnknown"];
     }
   }
 
   // (optional) HasAddition, HasSubtraction, HasMultiplication, HasDivision
-  if (wtHasAddition != 0) {
+  if (consWts["HasAddition"] != 0) {
     IloExpr y(env);
     for (int i=2; i<n; i++)
       y += (x[i] == l+k);
     IloNumVar slack(env);
     model.add(y + slack >= 1);
-    objective += slack * wtHasAddition;
+    objective += slack * consWts["HasAddition"];
   }
-  if (wtHasSubtraction != 0) {
+  if (consWts["HasSubtraction"] != 0) {
     IloExpr y(env);
     for (int i=2; i<n; i++)
       y += (x[i] == l+k+1);
     IloNumVar slack(env);
     model.add(y + slack >= 1);
-    objective += slack * wtHasSubtraction;
+    objective += slack * consWts["HasSubtraction"];
   }
-  if (wtHasMultiplication != 0) {
+  if (consWts["HasMultiplication"] != 0) {
     IloExpr y(env);
     for (int i=2; i<n; i++)
       y += (x[i] == l+k+2);
     IloNumVar slack(env);
     model.add(y + slack >= 1);
-    objective += slack * wtHasMultiplication;
+    objective += slack * consWts["HasMultiplication"];
   }
-  if (wtHasDivision != 0) {
+  if (consWts["HasDivision"] != 0) {
     IloExpr y(env);
     for (int i=2; i<n; i++)
       y += (x[i] == l+k+3);
     IloNumVar slack(env);
     model.add(y + slack >= 1);
-    objective += slack * wtHasDivision;
+    objective += slack * consWts["HasDivision"];
   }
 
   // set the expression to be optimized
