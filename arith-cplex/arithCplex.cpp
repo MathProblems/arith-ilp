@@ -746,7 +746,7 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
   for (int i=2; i<n-1; i++)
     model.add((x[i] == l+k+2) + c[i-1] + c[i-2] <= 2 + (x[i-2] <= x[i-1] - 1));
   // disable expressions of the form LHS = x; these are equivalent to x = RHS
-  model.add(u[n-2] == 0);
+  //model.add(u[n-2] == 0);
 
   // (optional) TypeConsistency
   if (consWts["TypeConsistency"] == 0) {
@@ -853,14 +853,25 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
 
   // (optional) PreserveOrderingInText
   if (consWts["PreserveOrderingInText"] != 0) {
-    // apply penalty at the entity level, not entity-pair level (otherwise it may
-    // grow too quickly)
-    for (int i=0; i<n-2; i++) {
-      IloNumVar slack(env);
-      for (int j=i+1; j<n-1; j++) {
-        model.add(x[i] <= (x[j]-1) + (m-1)*(1-c[i]) + slack);
+    // choice: apply penalty per out-of-order entity or per out-of-order entity pair
+    const bool applyPenaltyAtEntityPairLevel = true;
+    if (applyPenaltyAtEntityPairLevel) {
+      for (int i=0; i<n-2; i++) {
+        for (int j=i+1; j<n-1; j++) {
+          IloNumVar slack(env);
+          model.add(x[i] <= (x[j]-1) + (m-1)*(1-c[i]) + slack);
+          objective += slack * consWts["PreserveOrderingInText"];
+        }
       }
-      objective += slack * consWts["PreserveOrderingInText"];
+    }
+    else {
+      for (int i=0; i<n-2; i++) {
+        IloNumVar slack(env);
+        for (int j=i+1; j<n-1; j++) {
+          model.add(x[i] <= (x[j]-1) + (m-1)*(1-c[i]) + slack);
+        }
+        objective += slack * consWts["PreserveOrderingInText"];
+      }
     }
   }
 
