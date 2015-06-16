@@ -23,6 +23,7 @@
 #include <algorithm>
 #include <fstream>
 #include <map>
+#include <set>
 #include <stack>
 #include <vector>
 
@@ -100,6 +101,7 @@ map<string,int> consWts;  // weights of various constraints
 // cplex parameters: defaults
 int    param_nsolutions       = 25;
 string param_wts_config_file  = "weights.conf";
+bool   param_allowdupes       = false;
 bool   param_printexpr        = true;
 bool   param_printanswer      = true;
 bool   param_printsoln        = false;
@@ -257,6 +259,20 @@ int main (int argc, char **argv) {
         }
         // sort solutions by increasing objective value
         std::stable_sort(sortedIndex.begin(), sortedIndex.end());
+        // identify which expressions are unique (ignoring type differences);
+        // prefer to keep those that appear earlier in the above sorted order
+        set<int>    uniqueExprIndices;
+        set<string> seenExpressions;
+        if (!param_allowdupes) {
+          for (int s=0; s<nSolutionsFound; s++) {
+            const int sId = sortedIndex[s].second;
+            const string & exprPf = expressions[sId].postfix;
+            if (seenExpressions.find(exprPf) == seenExpressions.end()) {
+              uniqueExprIndices.insert(sId);
+              seenExpressions.insert(exprPf);
+            }
+          }
+        }
         // evaluate all expressions with a single call to Python's SymPy package
         if (param_printanswer)
           solveExpressionsWithSymPy(expressions);
@@ -265,6 +281,8 @@ int main (int argc, char **argv) {
           cout << "SOLN: CORRECT | POS/NEG | INT/FRA | OBJ-SCORE | TRUE-ANS | ANS | INFIX | POSTFIX | TYPED-POSTFIX" << endl;
           for (int s=0; s<nSolutionsFound; s++) {
             const int sId = sortedIndex[s].second;
+            if (!param_allowdupes && uniqueExprIndices.find(sId) == uniqueExprIndices.end())
+              continue;
             const FormattedExpr & expr = expressions[sId];
             const double answerValue = atof(expr.answer.c_str());
             const bool isCorrect = (fabs(answerValue - trueAnswer) < epsilon);
@@ -286,7 +304,8 @@ int main (int argc, char **argv) {
           }
         }
       }
-      const string solnProperty = string(" non-negative")
+      const string solnProperty = (param_allowdupes ? "" : " unique,")
+        + string(" non-negative")
         + (allIntConstants && consWts["IntConstantsImplyIntUnknown"] != 0 ? ", integer-valued " : " ");
       cout << "NET " << nAllowedSolutionsFound << solnProperty << "solutions found out of "
            << nSolutionsFound << " total solutions" << endl;
@@ -351,6 +370,7 @@ void printUsage(const char *progname, ostream & str = cout) {
        << "   -s num            same as --solutions num" << endl
        << "   --solutions num   number of solutions to find (default: 25)" << endl
        << "   --wts file        config file containing weights in libconfig format (default: weights.conf)" << endl
+       << "   --allowdupes      allow duplicate expressions in listed solutions (default: no)" << endl
        << "   --noprintexpr     do not print arithmetic expressions found (forces --noprintexpr; default: on)" << endl
        << "   --noprintanswer   do not print answer to arithmetic problem (default: on)" << endl
        << "   --printsoln       print solution (default: off)" << endl
@@ -383,6 +403,8 @@ void parseCommandLine(const int argc, const char * const * const argv) {
       param_nsolutions = atoi(argv[++i]);
     else if (!strcmp(optionName, "--wts"))
       param_wts_config_file = argv[++i];
+    else if (!strcmp(optionName, "--allowdupes"))
+      param_allowdupes = true;
     else if (!strcmp(optionName, "--noprintexpr")) {
       param_printexpr = false;
       param_printanswer = false;   // force param_printanswer to be false
