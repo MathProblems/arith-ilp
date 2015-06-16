@@ -350,7 +350,7 @@ void printUsage(const char *progname, ostream & str = cout) {
        << endl
        << "   -s num            same as --solutions num" << endl
        << "   --solutions num   number of solutions to find (default: 25)" << endl
-       << "   --wts file        config file containing weights in libconfig format (default: none)" << endl
+       << "   --wts file        config file containing weights in libconfig format (default: weights.conf)" << endl
        << "   --noprintexpr     do not print arithmetic expressions found (forces --noprintexpr; default: on)" << endl
        << "   --noprintanswer   do not print answer to arithmetic problem (default: on)" << endl
        << "   --printsoln       print solution (default: off)" << endl
