@@ -7,6 +7,9 @@ fi
 
 datafolder=$1
 
+arithCplex=../arithCplex
+weightsFile=../weights.conf
+
 insuffix=".txt"                        
 outSuffix=".out"
 nSolns=1000
@@ -17,6 +20,6 @@ inputFiles=$datafolder/*$insuffix
 
 time for f in $inputFiles; do
   echo $f
-  ../arithCplex -t $timelimit --threads $nThreads --printanswer -s $nSolns -a $f | /bin/grep -B3 -A1 EXPR > $f$outSuffix
+  $arithCplex -t $timelimit --threads $nThreads -s $nSolns --wts $weightsFile $f | /bin/grep -B3 -A1 EXPR > $f$outSuffix
 done
 
