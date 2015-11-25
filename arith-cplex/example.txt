@@ -1,7 +1,5 @@
-constants : 70 27
-unknowns : x
+quantities : 8 3 x
+types : "calorie" "bar" "calorie"
 operators : + - * / =
-objtypes : seashell
-constantOrUnknownType : 0 0 0
 n : 5
-answer : 43
+answer : 24.0
