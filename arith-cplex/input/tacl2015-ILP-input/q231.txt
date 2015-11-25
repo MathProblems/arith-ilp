@@ -1,0 +1,5 @@
+quantities : 5.92 2 6.79 20 x
+types : "dollar" "ticket" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 1.37

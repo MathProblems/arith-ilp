@@ -1,0 +1,5 @@
+quantities : 5 4 x
+types : "tree" "tree" "oak"
+operators : + - * / =
+n : 5
+answer : 9.0

@@ -1,0 +1,5 @@
+quantities : 36 7 x
+types : "book" "Alyssa" "book"
+operators : + - * / =
+n : 5
+answer : 252.0

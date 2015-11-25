@@ -1,0 +1,5 @@
+quantities : 61 26 7 x
+types : "plate" "plate" "plate" "plate"
+operators : + - * / =
+n : 7
+answer : 28.0

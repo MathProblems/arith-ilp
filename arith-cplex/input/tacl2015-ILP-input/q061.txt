@@ -1,0 +1,5 @@
+quantities : 67 33 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 34.0

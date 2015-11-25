@@ -1,0 +1,5 @@
+quantities : 0.5 0.1 0.1 x
+types : "light-year" "light-year" "light-year" "light-year"
+operators : + - * / =
+n : 7
+answer : 0.7

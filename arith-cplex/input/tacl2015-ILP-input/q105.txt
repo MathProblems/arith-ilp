@@ -1,0 +1,5 @@
+quantities : 110 22 x
+types : "marble" "Fred" "marble"
+operators : + - * / =
+n : 5
+answer : 5.0

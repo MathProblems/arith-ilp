@@ -1,0 +1,5 @@
+quantities : 1 12 9 x
+types : "dozen" "pokemon" "dozen" "pokemon"
+operators : + - * / =
+n : 7
+answer : 432.0

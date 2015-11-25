@@ -1,0 +1,5 @@
+quantities : 49 7 x
+types : "block" "block" "color"
+operators : + - * / =
+n : 5
+answer : 7

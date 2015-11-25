@@ -1,0 +1,5 @@
+quantities : 760 418 x
+types : "quarter" "quarter" "quarter"
+operators : + - * / =
+n : 5
+answer : 342.0

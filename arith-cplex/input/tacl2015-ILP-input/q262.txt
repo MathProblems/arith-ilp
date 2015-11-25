@@ -1,0 +1,5 @@
+quantities : 15 13 8 21 x
+types : "coin" "coin" "coin" "coin" "coin"
+operators : + - * / =
+n : 9
+answer : 15.0

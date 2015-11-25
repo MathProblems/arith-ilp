@@ -1,0 +1,5 @@
+quantities : 6,359 3,485 x
+types : "yen" "yen" "yen"
+operators : + - * / =
+n : 5
+answer : 9844.0

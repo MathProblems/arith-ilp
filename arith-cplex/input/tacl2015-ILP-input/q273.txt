@@ -1,0 +1,5 @@
+quantities : 24 14 3 2 x
+types : "bicycle" "tricycle" "wheel" "wheel" "wheel"
+operators : + - * / =
+n : 9
+answer : 90.0

@@ -1,0 +1,5 @@
+quantities : 2 x 3
+types : "mile" "mile" "week"
+operators : + - * / =
+n : 5
+answer : 42

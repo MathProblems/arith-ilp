@@ -1,0 +1,5 @@
+quantities : 212 68 x
+types : "fish" "fish" "fish"
+operators : + - * / =
+n : 5
+answer : 280

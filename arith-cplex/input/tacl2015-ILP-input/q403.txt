@@ -1,0 +1,5 @@
+quantities : 934 7 x
+types : "crown" "feather" "feather"
+operators : + - * / =
+n : 5
+answer : 6538

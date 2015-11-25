@@ -1,0 +1,5 @@
+quantities : 7,341 4,221 x
+types : "cell" "cell" "cell"
+operators : + - * / =
+n : 5
+answer : 3120.0

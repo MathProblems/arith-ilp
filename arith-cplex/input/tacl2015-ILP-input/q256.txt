@@ -1,0 +1,5 @@
+quantities : 11.0 19.0 7.0 8.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 29.0

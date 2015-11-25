@@ -1,0 +1,5 @@
+quantities : 6 6 8 18 x
+types : "van" "people" "bus" "people" "people"
+operators : + - * / =
+n : 9
+answer : 180.0

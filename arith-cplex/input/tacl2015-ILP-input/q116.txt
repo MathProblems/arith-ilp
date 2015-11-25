@@ -1,0 +1,5 @@
+quantities : 60 45 x 12
+types : "calorie" "bar" "dozen" "calorie"
+operators : + - * / =
+n : 7
+answer : 225.0

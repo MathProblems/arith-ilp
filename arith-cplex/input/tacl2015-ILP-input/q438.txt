@@ -1,0 +1,5 @@
+quantities : 96 8 x
+types : "cupcake" "child" "person"
+operators : + - * / =
+n : 5
+answer : 12

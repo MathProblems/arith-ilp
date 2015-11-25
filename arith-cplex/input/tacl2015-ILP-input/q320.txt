@@ -1,0 +1,5 @@
+quantities : 0.7 0.6 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.1

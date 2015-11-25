@@ -1,0 +1,5 @@
+quantities : 0.75 0.5 x
+types : "inch" "inch" "tailor"
+operators : + - * / =
+n : 5
+answer : 0.25

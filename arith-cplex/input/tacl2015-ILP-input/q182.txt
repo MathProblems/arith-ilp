@@ -1,0 +1,5 @@
+quantities : 7 49 x
+types : "day" "hamburger" "hamburger"
+operators : + - * / =
+n : 5
+answer : 7.0

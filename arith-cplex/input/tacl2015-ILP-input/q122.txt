@@ -1,0 +1,5 @@
+quantities : 9 x 12
+types : "dollar" "dozen" "quarter"
+operators : + - * / =
+n : 5
+answer : 3.0

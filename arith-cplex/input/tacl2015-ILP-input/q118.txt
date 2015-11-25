@@ -1,0 +1,5 @@
+quantities : 84 8 x 12
+types : "marble" "Melanie" "dozen" "marble"
+operators : + - * / =
+n : 7
+answer : 56.0

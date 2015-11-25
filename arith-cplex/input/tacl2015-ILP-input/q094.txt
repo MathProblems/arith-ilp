@@ -1,0 +1,5 @@
+quantities : 139 113 x
+types : "turnip" "turnip" "turnip"
+operators : + - * / =
+n : 5
+answer : 252.0

@@ -1,0 +1,5 @@
+quantities : 14,507 213 x
+types : "passenger" "passenger" "passenger"
+operators : + - * / =
+n : 5
+answer : 14720.0

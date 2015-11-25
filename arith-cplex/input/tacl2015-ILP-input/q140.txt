@@ -1,0 +1,5 @@
+quantities : 150.0 x
+types : "cent" "cent"
+operators : + - * / =
+n : 3
+answer : 150.0

@@ -1,0 +1,5 @@
+quantities : 12 84 x
+types : "ounce" "cent" "cost"
+operators : + - * / =
+n : 5
+answer : 7.0

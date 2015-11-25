@@ -1,0 +1,5 @@
+quantities : 74 35 18 3 x
+types : "cent" "cent" "cent" "pencil" "cost"
+operators : + - * / =
+n : 9
+answer : 7

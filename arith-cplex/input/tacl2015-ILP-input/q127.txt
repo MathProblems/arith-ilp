@@ -1,0 +1,5 @@
+quantities : 2 4 x
+types : "bush" "bush" "bush"
+operators : + - * / =
+n : 5
+answer : 6.0

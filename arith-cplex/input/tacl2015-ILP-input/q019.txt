@@ -1,0 +1,5 @@
+quantities : 4 6 x
+types : "tree" "tree" "walnut"
+operators : + - * / =
+n : 5
+answer : 10.0

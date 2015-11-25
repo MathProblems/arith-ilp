@@ -1,0 +1,5 @@
+quantities : 0.41 0.33 x
+types : "meter" "meter" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 0.08

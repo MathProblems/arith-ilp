@@ -1,0 +1,5 @@
+quantities : 6,522 5,165 x
+types : "liter" "liter" "liter"
+operators : + - * / =
+n : 5
+answer : 11687.0

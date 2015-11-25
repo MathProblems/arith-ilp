@@ -1,0 +1,5 @@
+quantities : 14,797 4,969 x
+types : "suit" "suit" "bathing"
+operators : + - * / =
+n : 5
+answer : 19766.0

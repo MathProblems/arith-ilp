@@ -1,0 +1,5 @@
+quantities : 64,535 522 x
+types : "acre" "acre" "acre"
+operators : + - * / =
+n : 5
+answer : 65057.0

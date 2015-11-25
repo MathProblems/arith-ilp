@@ -1,0 +1,5 @@
+quantities : 56 8 x
+types : "tomato" "tomato" "jar"
+operators : + - * / =
+n : 5
+answer : 7

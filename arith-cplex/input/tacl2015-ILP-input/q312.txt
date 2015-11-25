@@ -1,0 +1,5 @@
+quantities : 0.16666666666666666 0.3333333333333333 x
+types : "apartment" "apartment" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.5

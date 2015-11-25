@@ -1,0 +1,5 @@
+quantities : x 4 0.5 34
+types : "card" "card" "half" "card"
+operators : + - * / =
+n : 7
+answer : 64.0

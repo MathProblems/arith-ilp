@@ -1,0 +1,5 @@
+quantities : 0.16666666666666666 0.16666666666666666 0.5 x
+types : "ton" "ton" "ton" "ton"
+operators : + - * / =
+n : 7
+answer : 0.8333333333333334

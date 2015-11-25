@@ -1,0 +1,5 @@
+quantities : x 20 80
+types : "sack" "piece" "piece"
+operators : + - * / =
+n : 5
+answer : 4

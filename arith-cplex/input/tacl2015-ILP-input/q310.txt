@@ -1,0 +1,5 @@
+quantities : 0.5 0.1 x
+types : "carton" "carton" "milk"
+operators : + - * / =
+n : 5
+answer : 0.6

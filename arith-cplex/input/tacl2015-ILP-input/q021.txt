@@ -1,0 +1,5 @@
+quantities : x 7 5
+types : "puppy" "puppy" "puppy"
+operators : + - * / =
+n : 5
+answer : 12.0

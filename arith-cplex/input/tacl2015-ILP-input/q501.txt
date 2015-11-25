@@ -1,0 +1,5 @@
+quantities : 4 5 x 29
+types : "tree" "foot" "year" "foot"
+operators : + - * / =
+n : 7
+answer : 5.0

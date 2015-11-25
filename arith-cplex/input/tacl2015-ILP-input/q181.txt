@@ -1,0 +1,5 @@
+quantities : 15 3 x
+types : "dollar" "person" "bill"
+operators : + - * / =
+n : 5
+answer : 5.0

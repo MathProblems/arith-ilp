@@ -1,0 +1,5 @@
+quantities : 2,041 63,093 x
+types : "employee" "employee" "employee"
+operators : + - * / =
+n : 5
+answer : 65134.0

@@ -1,0 +1,5 @@
+quantities : 27 18 x
+types : "package" "piece" "piece"
+operators : + - * / =
+n : 5
+answer : 486

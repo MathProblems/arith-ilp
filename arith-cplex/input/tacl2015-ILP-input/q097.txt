@@ -1,0 +1,5 @@
+quantities : 709 221 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 488.0

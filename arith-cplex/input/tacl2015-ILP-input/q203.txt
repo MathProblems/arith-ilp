@@ -1,0 +1,5 @@
+quantities : 46 25 x
+types : "ruler" "ruler" "ruler"
+operators : + - * / =
+n : 5
+answer : 21.0

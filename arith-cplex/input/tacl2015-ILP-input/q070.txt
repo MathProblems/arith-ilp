@@ -1,0 +1,5 @@
+quantities : 7 9 x
+types : "lemon" "lemon" "lemon"
+operators : + - * / =
+n : 5
+answer : 16.0

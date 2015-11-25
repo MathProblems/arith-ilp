@@ -1,0 +1,5 @@
+quantities : 6 7 x
+types : "potato" "potato" "potato"
+operators : + - * / =
+n : 5
+answer : 13.0

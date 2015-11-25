@@ -1,0 +1,5 @@
+quantities : 45 x 315
+types : "book" "shelf" "book"
+operators : + - * / =
+n : 5
+answer : 7.0

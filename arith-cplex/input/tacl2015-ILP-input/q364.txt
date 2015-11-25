@@ -1,0 +1,5 @@
+quantities : x 7.666666666666667 3.3333333333333335
+types : "line" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 4.333333333333333

@@ -1,0 +1,5 @@
+quantities : 1.30 0 x
+types : "dollar" "person" "nickel"
+operators : + - * / =
+n : 5
+answer : 26

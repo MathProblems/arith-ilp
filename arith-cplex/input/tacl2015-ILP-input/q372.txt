@@ -1,0 +1,5 @@
+quantities : 0.81 0.35 x
+types : "inch" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 0.46

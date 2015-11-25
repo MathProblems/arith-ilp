@@ -1,0 +1,5 @@
+quantities : 0.3 0.2 x
+types : "foot" "foot" "foot"
+operators : + - * / =
+n : 5
+answer : 0.1

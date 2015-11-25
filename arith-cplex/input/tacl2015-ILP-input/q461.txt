@@ -1,0 +1,5 @@
+quantities : 5 250 x
+types : "vacation" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 1250

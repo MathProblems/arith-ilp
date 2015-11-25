@@ -1,0 +1,5 @@
+quantities : 61,921 49,500 x
+types : "yard" "yard" "yard"
+operators : + - * / =
+n : 5
+answer : 111421.0

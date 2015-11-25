@@ -1,0 +1,5 @@
+quantities : x 2 18
+types : "glass" "lemon" "lemon"
+operators : + - * / =
+n : 5
+answer : 9

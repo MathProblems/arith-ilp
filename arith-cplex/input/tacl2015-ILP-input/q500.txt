@@ -1,0 +1,5 @@
+quantities : 190 0.04 500 x
+types : "dollar" "sale" "dollar" "sale"
+operators : + - * / =
+n : 7
+answer : 7750.0

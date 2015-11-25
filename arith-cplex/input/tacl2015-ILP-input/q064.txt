@@ -1,0 +1,5 @@
+quantities : 73 96 x
+types : "bale" "bale" "bale"
+operators : + - * / =
+n : 5
+answer : 23.0

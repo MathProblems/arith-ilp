@@ -1,0 +1,5 @@
+quantities : 0.16666666666666666 0.6666666666666666 x
+types : "cup" "cup" "oil"
+operators : + - * / =
+n : 5
+answer : 0.8333333333333334

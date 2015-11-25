@@ -1,0 +1,5 @@
+quantities : 9 7 10 5 x
+types : "package" "package" "can" "can" "can"
+operators : + - * / =
+n : 9
+answer : 55.0

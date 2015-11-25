@@ -1,0 +1,5 @@
+quantities : 8.9 2.3 x
+types : "centimeter" "centimeter" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 6.6

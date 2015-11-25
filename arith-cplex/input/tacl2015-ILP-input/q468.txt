@@ -1,0 +1,5 @@
+quantities : 124 3 x
+types : "student" "star" "star"
+operators : + - * / =
+n : 5
+answer : 372

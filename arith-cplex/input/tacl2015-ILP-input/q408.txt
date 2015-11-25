@@ -1,0 +1,5 @@
+quantities : 700 x 100
+types : "sheet" "box" "sheet"
+operators : + - * / =
+n : 5
+answer : 7

@@ -1,0 +1,5 @@
+quantities : 8.75 6 x
+types : "bucket" "bucket" "bucket"
+operators : + - * / =
+n : 5
+answer : 2.75

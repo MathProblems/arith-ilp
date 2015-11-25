@@ -1,0 +1,5 @@
+quantities : 3,884 2,871 x
+types : "car" "car" "car"
+operators : + - * / =
+n : 5
+answer : 6755.0

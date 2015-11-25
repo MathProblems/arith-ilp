@@ -1,0 +1,5 @@
+quantities : 10 22 x
+types : "sticker" "page" "sticker"
+operators : + - * / =
+n : 5
+answer : 220

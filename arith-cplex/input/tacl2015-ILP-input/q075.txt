@@ -1,0 +1,5 @@
+quantities : 34 49 x
+types : "tree" "tree" "dogwood"
+operators : + - * / =
+n : 5
+answer : 83.0

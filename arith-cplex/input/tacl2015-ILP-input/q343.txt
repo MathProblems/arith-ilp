@@ -1,0 +1,5 @@
+quantities : 0.25 0.4166666666666667 0.25 x
+types : "pitcher" "pitcher" "pitcher" "pitcher"
+operators : + - * / =
+n : 7
+answer : 0.9166666666666666

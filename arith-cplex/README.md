@@ -66,7 +66,7 @@ Usage: `./runall.sh datafolder`
 
 **Splitting a joint input file for a dataset into multiple `*.txt` files for `arithCplex`**
 
-The `splitQuestions.sh` script in the `scripts` folder is a utility that may be used to split a joint input file, such as `tacl2015.ILP.input`, into individual `*.txt` files, one per question, that can be fed to `arithCplex`. The output is a set of files in `outdir` named `q000.txt, q001.txt, q002.txt,` and so on.
+The `splitQuestions.sh` script in the `scripts` folder is a utility that may be used to split a joint input file, such as `tacl2015-ILP-input.txt`, into individual `*.txt` files, one per question, that can be fed to `arithCplex`. The output is a set of files in `outdir` named `q000.txt, q001.txt, q002.txt,` and so on.
 
 Usage: `splitQuestions.sh unsplitInputFile outdir`
 

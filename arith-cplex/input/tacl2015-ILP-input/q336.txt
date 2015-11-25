@@ -1,0 +1,5 @@
+quantities : 0.16666666666666666 0.4166666666666667 0.08333333333333333 x
+types : "centimeter" "centimeter" "centimeter" "centimeter"
+operators : + - * / =
+n : 7
+answer : 0.6666666666666666

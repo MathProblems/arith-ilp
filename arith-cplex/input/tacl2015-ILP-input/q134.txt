@@ -1,0 +1,5 @@
+quantities : 7 5 x
+types : "nickel" "nickel" "nickel"
+operators : + - * / =
+n : 5
+answer : 12.0

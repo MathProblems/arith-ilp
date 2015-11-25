@@ -1,0 +1,5 @@
+quantities : 143 11 x
+types : "sandwich" "niece" "niece"
+operators : + - * / =
+n : 5
+answer : 13

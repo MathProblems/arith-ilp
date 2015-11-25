@@ -1,0 +1,4064 @@
+
+0
+quantities : 70 x 27
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 43.0
+
+
+1
+quantities : 28 54 x
+types : "bale" "bale" "bale"
+operators : + - * / =
+n : 5
+answer : 26.0
+
+
+2
+quantities : 45 3 x
+types : "dollar" "person" "total"
+operators : + - * / =
+n : 5
+answer : 135.0
+
+
+3
+quantities : 8 2 x
+types : "cup" "cup" "cup"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+4
+quantities : 12 4 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 8.0
+
+
+5
+quantities : 22 55 x
+types : "tree" "tree" "tree"
+operators : + - * / =
+n : 5
+answer : 33.0
+
+
+6
+quantities : 34 86 x
+types : "peach" "peach" "stand"
+operators : + - * / =
+n : 5
+answer : 52.0
+
+
+7
+quantities : 6 x 16
+types : "rose" "rose" "rose"
+operators : + - * / =
+n : 5
+answer : 10.0
+
+
+8
+quantities : 2 5 x 27
+types : "dollar" "bar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 5.0
+
+
+9
+quantities : x 4 0.5 34
+types : "card" "card" "half" "card"
+operators : + - * / =
+n : 7
+answer : 64.0
+
+
+10
+quantities : 0.5 8 x 12
+types : "half" "dollar" "allowance" "dollar"
+operators : + - * / =
+n : 7
+answer : 8.0
+
+
+11
+quantities : 162 0 x
+types : "number" "person" "smallest"
+operators : + - * / =
+n : 5
+answer : 52.0
+
+
+12
+quantities : 79 9 x 16
+types : "dollar" "book" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 7.0
+
+
+13
+quantities : 17 7 x 80
+types : "dollar" "dollar" "hour" "dollar"
+operators : + - * / =
+n : 7
+answer : 9.0
+
+
+14
+quantities : 375 7 x 4
+types : "student" "bus" "student" "student"
+operators : + - * / =
+n : 7
+answer : 53.0
+
+
+15
+quantities : x 0.5 6 13
+types : "book" "half" "book" "book"
+operators : + - * / =
+n : 7
+answer : 14.0
+
+
+16
+quantities : 69 0 x
+types : "number" "person" "smallest"
+operators : + - * / =
+n : 5
+answer : 21.0
+
+
+17
+quantities : 4 9 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 13.0
+
+
+18
+quantities : 9 8 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 17.0
+
+
+19
+quantities : 4 6 x
+types : "tree" "tree" "walnut"
+operators : + - * / =
+n : 5
+answer : 10.0
+
+
+20
+quantities : 9 7 x
+types : "dime" "dime" "dime"
+operators : + - * / =
+n : 5
+answer : 16.0
+
+
+21
+quantities : x 7 5
+types : "puppy" "puppy" "puppy"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+22
+quantities : 9 6 x
+types : "pizza" "pizza" "pizza"
+operators : + - * / =
+n : 5
+answer : 15.0
+
+
+23
+quantities : 2 3 x
+types : "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+24
+quantities : 6 8 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 14.0
+
+
+25
+quantities : 6 3 x
+types : "carrot" "carrot" "carrot"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+26
+quantities : 2 9 x
+types : "apple" "apple" "apple"
+operators : + - * / =
+n : 5
+answer : 11.0
+
+
+27
+quantities : 9 7 5 x
+types : "seashell" "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 7
+answer : 21.0
+
+
+28
+quantities : x 3 6 9
+types : "kitten" "kitten" "kitten" "kitten"
+operators : + - * / =
+n : 7
+answer : 18.0
+
+
+29
+quantities : 9 5 2 x
+types : "balloon" "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 7
+answer : 16.0
+
+
+30
+quantities : 7 8 4 x
+types : "dime" "dime" "dime" "dime"
+operators : + - * / =
+n : 7
+answer : 19.0
+
+
+31
+quantities : 5 6 3 x
+types : "cake" "cake" "cake" "cake"
+operators : + - * / =
+n : 7
+answer : 14.0
+
+
+32
+quantities : 4 9 3 x
+types : "plum" "plum" "plum" "plum"
+operators : + - * / =
+n : 7
+answer : 16.0
+
+
+33
+quantities : 7 3 2 x
+types : "tree" "tree" "tree" "dogwood"
+operators : + - * / =
+n : 7
+answer : 12.0
+
+
+34
+quantities : 4 5 9 x
+types : "onion" "onion" "onion" "onion"
+operators : + - * / =
+n : 7
+answer : 18.0
+
+
+35
+quantities : 18 47 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 65.0
+
+
+36
+quantities : 45 11 x
+types : "pear" "pear" "pear"
+operators : + - * / =
+n : 5
+answer : 56.0
+
+
+37
+quantities : 20 21 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 41.0
+
+
+38
+quantities : 49 25 x
+types : "quarter" "quarter" "quarter"
+operators : + - * / =
+n : 5
+answer : 74.0
+
+
+39
+quantities : 33 44 x
+types : "tree" "tree" "walnut"
+operators : + - * / =
+n : 5
+answer : 77.0
+
+
+40
+quantities : 21 49 x
+types : "quarter" "quarter" "quarter"
+operators : + - * / =
+n : 5
+answer : 70.0
+
+
+41
+quantities : 41 30 x
+types : "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 71.0
+
+
+42
+quantities : 10 38 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 48.0
+
+
+43
+quantities : 40 41 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 81.0
+
+
+44
+quantities : 38 44 x
+types : "cantelope" "cantelope" "cantelope"
+operators : + - * / =
+n : 5
+answer : 82.0
+
+
+45
+quantities : 14 29 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 43.0
+
+
+46
+quantities : 18 41 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 59.0
+
+
+47
+quantities : 39 41 20 x
+types : "tree" "tree" "tree" "dogwood"
+operators : + - * / =
+n : 7
+answer : 100.0
+
+
+48
+quantities : 10 24 33 x
+types : "book" "book" "book" "book"
+operators : + - * / =
+n : 7
+answer : 67.0
+
+
+49
+quantities : 46 47 12 x
+types : "pear" "pear" "pear" "pear"
+operators : + - * / =
+n : 7
+answer : 105.0
+
+
+50
+quantities : 29 16 20 x
+types : "cantelope" "cantelope" "cantelope" "cantelope"
+operators : + - * / =
+n : 7
+answer : 65.0
+
+
+51
+quantities : 19 39 25 x
+types : "dime" "dime" "dime" "dime"
+operators : + - * / =
+n : 7
+answer : 83.0
+
+
+52
+quantities : 37 28 39 x
+types : "balloon" "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 7
+answer : 104.0
+
+
+53
+quantities : 27 41 20 x
+types : "card" "card" "card" "card"
+operators : + - * / =
+n : 7
+answer : 88.0
+
+
+54
+quantities : 11 17 16 x
+types : "game" "game" "game" "game"
+operators : + - * / =
+n : 7
+answer : 44.0
+
+
+55
+quantities : 43 19 16 x
+types : "pencil" "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 7
+answer : 78.0
+
+
+56
+quantities : 35 56 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 21.0
+
+
+57
+quantities : 7 4 x
+types : "cup" "cup" "cup"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+58
+quantities : 53 64 x
+types : "tree" "tree" "tree"
+operators : + - * / =
+n : 5
+answer : 11.0
+
+
+59
+quantities : 56 x 22
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 34.0
+
+
+60
+quantities : 13 55 x
+types : "peach" "peach" "stand"
+operators : + - * / =
+n : 5
+answer : 42.0
+
+
+61
+quantities : 67 33 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 34.0
+
+
+62
+quantities : 3 x 14
+types : "rose" "rose" "rose"
+operators : + - * / =
+n : 5
+answer : 11.0
+
+
+63
+quantities : 74.0 86.0 x
+types : "money" "money" "money"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+64
+quantities : 73 96 x
+types : "bale" "bale" "bale"
+operators : + - * / =
+n : 5
+answer : 23.0
+
+
+65
+quantities : 6 7 x
+types : "potato" "potato" "potato"
+operators : + - * / =
+n : 5
+answer : 13.0
+
+
+66
+quantities : 9 3 x
+types : "crayon" "crayon" "crayon"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+67
+quantities : 5 4 x
+types : "tree" "tree" "oak"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+68
+quantities : 7 4 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+69
+quantities : 7 4 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+70
+quantities : 7 9 x
+types : "lemon" "lemon" "lemon"
+operators : + - * / =
+n : 5
+answer : 16.0
+
+
+71
+quantities : 6 9 x
+types : "cake" "cake" "cake"
+operators : + - * / =
+n : 5
+answer : 15.0
+
+
+72
+quantities : 8 2 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+73
+quantities : 7 3 x
+types : "dime" "dime" "dime"
+operators : + - * / =
+n : 5
+answer : 4.0
+
+
+74
+quantities : 8 2 x
+types : "kitten" "kitten" "kitten"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+75
+quantities : 34 49 x
+types : "tree" "tree" "dogwood"
+operators : + - * / =
+n : 5
+answer : 83.0
+
+
+76
+quantities : 27 45 x
+types : "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 72.0
+
+
+77
+quantities : 39 14 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 25.0
+
+
+78
+quantities : 35 18 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 17.0
+
+
+79
+quantities : 22 20 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 42.0
+
+
+80
+quantities : 87 13 x
+types : "card" "card" "card"
+operators : + - * / =
+n : 5
+answer : 74.0
+
+
+81
+quantities : 51 23 x
+types : "pumpkin" "pumpkin" "pumpkin"
+operators : + - * / =
+n : 5
+answer : 74.0
+
+
+82
+quantities : 44 52 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 96.0
+
+
+83
+quantities : 64 14 x
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 50.0
+
+
+84
+quantities : 25 73 x
+types : "tree" "tree" "tree"
+operators : + - * / =
+n : 5
+answer : 98.0
+
+
+85
+quantities : 54 22 x
+types : "scissors" "scissors" "scissors"
+operators : + - * / =
+n : 5
+answer : 76.0
+
+
+86
+quantities : 42 17 x
+types : "pear" "pear" "pear"
+operators : + - * / =
+n : 5
+answer : 59.0
+
+
+87
+quantities : 98 93 x
+types : "penny" "penny" "penny"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+88
+quantities : 79 63 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 16.0
+
+
+89
+quantities : 64 32 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 32.0
+
+
+90
+quantities : 110 102 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 212.0
+
+
+91
+quantities : 122 105 x
+types : "orange" "orange" "orange"
+operators : + - * / =
+n : 5
+answer : 227.0
+
+
+92
+quantities : 760 418 x
+types : "quarter" "quarter" "quarter"
+operators : + - * / =
+n : 5
+answer : 342.0
+
+
+93
+quantities : 616 147 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 469.0
+
+
+94
+quantities : 139 113 x
+types : "turnip" "turnip" "turnip"
+operators : + - * / =
+n : 5
+answer : 252.0
+
+
+95
+quantities : 676 224 x
+types : "card" "card" "pokemon"
+operators : + - * / =
+n : 5
+answer : 452.0
+
+
+96
+quantities : 107 104 x
+types : "tree" "tree" "walnut"
+operators : + - * / =
+n : 5
+answer : 211.0
+
+
+97
+quantities : 709 221 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 488.0
+
+
+98
+quantities : 115 100 x
+types : "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 215.0
+
+
+99
+quantities : 45 5 x
+types : "dollar" "bill" "dollar"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+100
+quantities : 18 x 2
+types : "trout" "trout" "person"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+101
+quantities : 7 63 x
+types : "day" "hamburger" "hamburger"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+102
+quantities : 45 5 x
+types : "hour" "day" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+103
+quantities : 27 3 x
+types : "game" "season" "game"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+104
+quantities : 9.0 x
+types : "dime" "dime"
+operators : + - * / =
+n : 3
+answer : 9.0
+
+
+105
+quantities : 110 22 x
+types : "marble" "Fred" "marble"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+106
+quantities : 390 x 30
+types : "student" "classroom" "student"
+operators : + - * / =
+n : 5
+answer : 13.0
+
+
+107
+quantities : 96 1 x
+types : "muffin" "person" "box"
+operators : + - * / =
+n : 5
+answer : 8.0
+
+
+108
+quantities : 20.0 x
+types : "dollar" "dollar"
+operators : + - * / =
+n : 3
+answer : 20.0
+
+
+109
+quantities : 45 x 315
+types : "book" "shelf" "book"
+operators : + - * / =
+n : 5
+answer : 7.0
+
+
+110
+quantities : 615 15 x
+types : "crayon" "crayon" "pack"
+operators : + - * / =
+n : 5
+answer : 41.0
+
+
+111
+quantities : 46 x 276
+types : "dollar" "home" "dollar"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+112
+quantities : 323 17 x
+types : "game" "month" "game"
+operators : + - * / =
+n : 5
+answer : 19.0
+
+
+113
+quantities : 540 20 x
+types : "card" "card" "pack"
+operators : + - * / =
+n : 5
+answer : 108.0
+
+
+114
+quantities : 344 43 x
+types : "piece" "student" "piece"
+operators : + - * / =
+n : 5
+answer : 8.0
+
+
+115
+quantities : 25.00 96 x 12
+types : "dollar" "house" "dozen" "dollar"
+operators : + - * / =
+n : 7
+answer : 200.0
+
+
+116
+quantities : 60 45 x 12
+types : "calorie" "bar" "dozen" "calorie"
+operators : + - * / =
+n : 7
+answer : 225.0
+
+
+117
+quantities : 96 x 12
+types : "bird" "dozen" "bird"
+operators : + - * / =
+n : 5
+answer : 8.0
+
+
+118
+quantities : 84 8 x 12
+types : "marble" "Melanie" "dozen" "marble"
+operators : + - * / =
+n : 7
+answer : 56.0
+
+
+119
+quantities : 192 x 12
+types : "ball" "dozen" "ball"
+operators : + - * / =
+n : 5
+answer : 16.0
+
+
+120
+quantities : 72 x 12
+types : "egg" "dozen" "egg"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+121
+quantities : 48 8 x 12
+types : "book" "Mike" "dozen" "book"
+operators : + - * / =
+n : 7
+answer : 32.0
+
+
+122
+quantities : 9 x 12
+types : "dollar" "dozen" "quarter"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+123
+quantities : 96 x 12
+types : "card" "dozen" "card"
+operators : + - * / =
+n : 5
+answer : 32.0
+
+
+124
+quantities : 3 2 x
+types : "card" "card" "pokemon"
+operators : + - * / =
+n : 5
+answer : 1.0
+
+
+125
+quantities : 8 4 x
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 4.0
+
+
+126
+quantities : 5 2 x
+types : "dime" "dime" "dime"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+127
+quantities : 2 4 x
+types : "bush" "bush" "bush"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+128
+quantities : 6 5 x
+types : "pear" "pear" "pear"
+operators : + - * / =
+n : 5
+answer : 11.0
+
+
+129
+quantities : 4 3 x
+types : "watermelon" "watermelon" "watermelon"
+operators : + - * / =
+n : 5
+answer : 1.0
+
+
+130
+quantities : 3 5 x
+types : "calorie" "bar" "calorie"
+operators : + - * / =
+n : 5
+answer : 15.0
+
+
+131
+quantities : 5 2 x
+types : "marble" "Dan" "marble"
+operators : + - * / =
+n : 5
+answer : 10.0
+
+
+132
+quantities : 9 12 x
+types : "dozen" "ball" "golf"
+operators : + - * / =
+n : 5
+answer : 108.0
+
+
+133
+quantities : x 9 4
+types : "pokemon" "pokemon" "pokemon"
+operators : + - * / =
+n : 5
+answer : 13.0
+
+
+134
+quantities : 7 5 x
+types : "nickel" "nickel" "nickel"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+135
+quantities : 3 4 x
+types : "card" "person" "card"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+136
+quantities : 6 9 x
+types : "turnip" "turnip" "turnip"
+operators : + - * / =
+n : 5
+answer : 15.0
+
+
+137
+quantities : 4 2 x
+types : "child" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 8.0
+
+
+138
+quantities : 9 3 x
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+139
+quantities : 8 3 x
+types : "calorie" "bar" "calorie"
+operators : + - * / =
+n : 5
+answer : 24.0
+
+
+140
+quantities : 150.0 x
+types : "cent" "cent"
+operators : + - * / =
+n : 3
+answer : 150.0
+
+
+141
+quantities : 960 x 30
+types : "student" "classroom" "student"
+operators : + - * / =
+n : 5
+answer : 32.0
+
+
+142
+quantities : 12.5 12 x
+types : "money" "hour" "money"
+operators : + - * / =
+n : 5
+answer : 150.0
+
+
+143
+quantities : 12 2 x
+types : "game" "month" "game"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+144
+quantities : 6 12 x
+types : "dozen" "egg" "egg"
+operators : + - * / =
+n : 5
+answer : 72.0
+
+
+145
+quantities : 6 4 x
+types : "card" "person" "card"
+operators : + - * / =
+n : 5
+answer : 24.0
+
+
+146
+quantities : 4 12 x
+types : "dozen" "egg" "egg"
+operators : + - * / =
+n : 5
+answer : 48.0
+
+
+147
+quantities : 1110 x 30
+types : "student" "classroom" "student"
+operators : + - * / =
+n : 5
+answer : 37.0
+
+
+148
+quantities : 6 4 x
+types : "carrot" "carrot" "carrot"
+operators : + - * / =
+n : 5
+answer : 10.0
+
+
+149
+quantities : 6 5 x
+types : "marble" "Benny" "marble"
+operators : + - * / =
+n : 5
+answer : 30.0
+
+
+150
+quantities : 12.5 8 x
+types : "money" "hour" "money"
+operators : + - * / =
+n : 5
+answer : 100.0
+
+
+151
+quantities : 5 2 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+152
+quantities : 5 3 x
+types : "card" "card" "card"
+operators : + - * / =
+n : 5
+answer : 2.0
+
+
+153
+quantities : 49.0 x
+types : "dollar" "dollar"
+operators : + - * / =
+n : 3
+answer : 49.0
+
+
+154
+quantities : 10 5 x
+types : "game" "month" "game"
+operators : + - * / =
+n : 5
+answer : 2.0
+
+
+155
+quantities : 8 3 x
+types : "dollar" "person" "bill"
+operators : + - * / =
+n : 5
+answer : 24.0
+
+
+156
+quantities : 8 2 x
+types : "trout" "Melanie" "trout"
+operators : + - * / =
+n : 5
+answer : 16.0
+
+
+157
+quantities : 5 7 x
+types : "day" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 35.0
+
+
+158
+quantities : 3 144.0 x
+types : "hour" "hour" "hour"
+operators : + - * / =
+n : 5
+answer : 18.0
+
+
+159
+quantities : 7 8 x
+types : "day" "pie" "pie"
+operators : + - * / =
+n : 5
+answer : 56.0
+
+
+160
+quantities : 9 1 x
+types : "bill" "person" "money"
+operators : + - * / =
+n : 5
+answer : 45.0
+
+
+161
+quantities : 7 4 x
+types : "balloon" "Nancy" "balloon"
+operators : + - * / =
+n : 5
+answer : 28.0
+
+
+162
+quantities : 8 3 x
+types : "pencil" "person" "pencil"
+operators : + - * / =
+n : 5
+answer : 24.0
+
+
+163
+quantities : 14 4 x
+types : "card" "person" "pokemon"
+operators : + - * / =
+n : 5
+answer : 56.0
+
+
+164
+quantities : 36 7 x
+types : "book" "Alyssa" "book"
+operators : + - * / =
+n : 5
+answer : 252.0
+
+
+165
+quantities : 13 12 x
+types : "dozen" "ball" "golf"
+operators : + - * / =
+n : 5
+answer : 156.0
+
+
+166
+quantities : 13 14 x
+types : "game" "month" "game"
+operators : + - * / =
+n : 5
+answer : 182.0
+
+
+167
+quantities : 7 12 x
+types : "dozen" "egg" "egg"
+operators : + - * / =
+n : 5
+answer : 84.0
+
+
+168
+quantities : 29 7 x
+types : "balloon" "Dan" "balloon"
+operators : + - * / =
+n : 5
+answer : 203.0
+
+
+169
+quantities : 31 11 x
+types : "calorie" "bar" "calorie"
+operators : + - * / =
+n : 5
+answer : 341.0
+
+
+170
+quantities : 275.0 x
+types : "cent" "cent"
+operators : + - * / =
+n : 3
+answer : 275.0
+
+
+171
+quantities : 46 4 12 x
+types : "child" "dozen" "pencil" "pencil"
+operators : + - * / =
+n : 7
+answer : 2208.0
+
+
+172
+quantities : 1 3.0 x
+types : "dozen" "money" "money"
+operators : + - * / =
+n : 5
+answer : 3.0
+
+
+173
+quantities : 9 12 x
+types : "dozen" "egg" "egg"
+operators : + - * / =
+n : 5
+answer : 108.0
+
+
+174
+quantities : 4 12 42 x
+types : "dozen" "calorie" "bar" "calorie"
+operators : + - * / =
+n : 7
+answer : 2016.0
+
+
+175
+quantities : 8 12 5 x
+types : "dozen" "book" "dozen" "book"
+operators : + - * / =
+n : 7
+answer : 480.0
+
+
+176
+quantities : 3 12 4 x
+types : "dozen" "marble" "dozen" "marble"
+operators : + - * / =
+n : 7
+answer : 144.0
+
+
+177
+quantities : 1 12 9 x
+types : "dozen" "pokemon" "dozen" "pokemon"
+operators : + - * / =
+n : 7
+answer : 432.0
+
+
+178
+quantities : 1 12 x
+types : "dozen" "bird" "bird"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+179
+quantities : 24 3 x
+types : "crayon" "person" "person"
+operators : + - * / =
+n : 5
+answer : 8.0
+
+
+180
+quantities : 5 2 x
+types : "trout" "Sara" "trout"
+operators : + - * / =
+n : 5
+answer : 10.0
+
+
+181
+quantities : 15 3 x
+types : "dollar" "person" "bill"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+182
+quantities : 7 49 x
+types : "day" "hamburger" "hamburger"
+operators : + - * / =
+n : 5
+answer : 7.0
+
+
+183
+quantities : 6 3 x
+types : "balloon" "Sally" "balloon"
+operators : + - * / =
+n : 5
+answer : 18.0
+
+
+184
+quantities : 3 120.0 x
+types : "hour" "hour" "hour"
+operators : + - * / =
+n : 5
+answer : 15.0
+
+
+185
+quantities : 7 2 x
+types : "game" "month" "game"
+operators : + - * / =
+n : 5
+answer : 14.0
+
+
+186
+quantities : 4 1 x
+types : "gumball" "person" "money"
+operators : + - * / =
+n : 5
+answer : 32.0
+
+
+187
+quantities : 8 3 x
+types : "potato" "potato" "potato"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+188
+quantities : 6 4 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 2.0
+
+
+189
+quantities : 9 2 x
+types : "tree" "tree" "oak"
+operators : + - * / =
+n : 5
+answer : 7.0
+
+
+190
+quantities : 8 3 x
+types : "quarter" "quarter" "quarter"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+191
+quantities : 9 3 x
+types : "hamburger" "hamburger" "hamburger"
+operators : + - * / =
+n : 5
+answer : 6.0
+
+
+192
+quantities : 7 3 x
+types : "crayon" "crayon" "crayon"
+operators : + - * / =
+n : 5
+answer : 4.0
+
+
+193
+quantities : 9 4 x
+types : "lime" "lime" "lime"
+operators : + - * / =
+n : 5
+answer : 5.0
+
+
+194
+quantities : 7 3 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 4.0
+
+
+195
+quantities : 9 2 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 7.0
+
+
+196
+quantities : 43 27 x
+types : "apple" "apple" "apple"
+operators : + - * / =
+n : 5
+answer : 16.0
+
+
+197
+quantities : 31 13 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 18.0
+
+
+198
+quantities : 30 16 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 14.0
+
+
+199
+quantities : 40 22 x
+types : "card" "card" "card"
+operators : + - * / =
+n : 5
+answer : 18.0
+
+
+200
+quantities : 47 25 x
+types : "seashell" "seashell" "seashell"
+operators : + - * / =
+n : 5
+answer : 22.0
+
+
+201
+quantities : 43 23 x
+types : "pumpkin" "pumpkin" "pumpkin"
+operators : + - * / =
+n : 5
+answer : 20.0
+
+
+202
+quantities : 33 26 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 7.0
+
+
+203
+quantities : 46 25 x
+types : "ruler" "ruler" "ruler"
+operators : + - * / =
+n : 5
+answer : 21.0
+
+
+204
+quantities : 33 18 x
+types : "tree" "tree" "tree"
+operators : + - * / =
+n : 5
+answer : 15.0
+
+
+205
+quantities : 17 6 x
+types : "half-dollar" "half-dollar" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 11.5
+
+
+206
+quantities : 0.09 1.75 x
+types : "money" "money" "money"
+operators : + - * / =
+n : 5
+answer : 1.84
+
+
+207
+quantities : 14 1 x
+types : "toothfairy" "person" "money"
+operators : + - * / =
+n : 5
+answer : 11.9
+
+
+208
+quantities : 3.0 0.07 x
+types : "money" "money" "money"
+operators : + - * / =
+n : 5
+answer : 3.07
+
+
+209
+quantities : 4 14 x
+types : "half-dollar" "half-dollar" "amount"
+operators : + - * / =
+n : 5
+answer : 9.0
+
+
+210
+quantities : 0.15 1.3 0.7 4.5 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 6.65
+
+
+211
+quantities : 1.5 0.4 x
+types : "money" "money" "money"
+operators : + - * / =
+n : 5
+answer : 1.9
+
+
+212
+quantities : 0.02 1.2 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 1.22
+
+
+213
+quantities : 5.20 4.23 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 9.43
+
+
+214
+quantities : 145.16 5.84 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 151.0
+
+
+215
+quantities : 5.71 6.59 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 12.3
+
+
+216
+quantities : 4 6.06 4.45 x
+types : "pack" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 23.86
+
+
+217
+quantities : 10.22 11.73 x
+types : "dollar" "dollar" "cost"
+operators : + - * / =
+n : 5
+answer : 21.95
+
+
+218
+quantities : 5.36 5.10 x
+types : "dollar" "dollar" "total"
+operators : + - * / =
+n : 5
+answer : 10.46
+
+
+219
+quantities : 14.28 4.74 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 19.02
+
+
+220
+quantities : 12.08 9.85 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 21.93
+
+
+221
+quantities : 11.08 14.33 9.31 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 34.72
+
+
+222
+quantities : 13.99 12.14 7.43 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 33.56
+
+
+223
+quantities : 142.46 8.89 7 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 158.35
+
+
+224
+quantities : 14.02 9.46 12.04 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 35.52
+
+
+225
+quantities : 2 2.73 4.01 8.95 x
+types : "pack" "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 18.42
+
+
+226
+quantities : 10.62 2 1.59 13.95 x
+types : "dollar" "ticket" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 36.78
+
+
+227
+quantities : 9.05 4.95 6.52 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 20.52
+
+
+228
+quantities : 7.19 6.83 20 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 5.98
+
+
+229
+quantities : 9.24 8.25 20.0 x
+types : "money" "money" "money" "money"
+operators : + - * / =
+n : 7
+answer : 2.51
+
+
+230
+quantities : 8.77 10.97 20 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 0.26
+
+
+231
+quantities : 5.92 2 6.79 20 x
+types : "dollar" "ticket" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 1.37
+
+
+232
+quantities : 9.14 6.81 20 x
+types : "dollar" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 4.05
+
+
+233
+quantities : 5,973 8,723 x
+types : "ton" "ton" "ton"
+operators : + - * / =
+n : 5
+answer : 14696.0
+
+
+234
+quantities : 1,346 6,444 x
+types : "muff" "muff" "muff"
+operators : + - * / =
+n : 5
+answer : 7790.0
+
+
+235
+quantities : 2,479 6,085 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 8564.0
+
+
+236
+quantities : 6,522 5,165 x
+types : "liter" "liter" "liter"
+operators : + - * / =
+n : 5
+answer : 11687.0
+
+
+237
+quantities : 3,884 2,871 x
+types : "car" "car" "car"
+operators : + - * / =
+n : 5
+answer : 6755.0
+
+
+238
+quantities : 6,359 3,485 x
+types : "yen" "yen" "yen"
+operators : + - * / =
+n : 5
+answer : 9844.0
+
+
+239
+quantities : 1,986 5,106 x
+types : "book" "book" "book"
+operators : + - * / =
+n : 5
+answer : 7092.0
+
+
+240
+quantities : 20,817 97,741 x
+types : "house" "house" "house"
+operators : + - * / =
+n : 5
+answer : 118558.0
+
+
+241
+quantities : 48,097 684 x
+types : "bushel" "bushel" "bushel"
+operators : + - * / =
+n : 5
+answer : 48781.0
+
+
+242
+quantities : 69.0 26935.0 x
+types : "money" "money" "money"
+operators : + - * / =
+n : 5
+answer : 27004.0
+
+
+243
+quantities : 14,507 213 x
+types : "passenger" "passenger" "passenger"
+operators : + - * / =
+n : 5
+answer : 14720.0
+
+
+244
+quantities : 64,535 522 x
+types : "acre" "acre" "acre"
+operators : + - * / =
+n : 5
+answer : 65057.0
+
+
+245
+quantities : 12,170 54,912 x
+types : "ladybug" "ladybug" "ladybug"
+operators : + - * / =
+n : 5
+answer : 67082.0
+
+
+246
+quantities : x 90,171 16,320
+types : "people" "people" "people"
+operators : + - * / =
+n : 5
+answer : 106491.0
+
+
+247
+quantities : 49,952 918 x
+types : "ton" "ton" "ton"
+operators : + - * / =
+n : 5
+answer : 50870.0
+
+
+248
+quantities : 61,921 49,500 x
+types : "yard" "yard" "yard"
+operators : + - * / =
+n : 5
+answer : 111421.0
+
+
+249
+quantities : 2,041 63,093 x
+types : "employee" "employee" "employee"
+operators : + - * / =
+n : 5
+answer : 65134.0
+
+
+250
+quantities : 712,261 259,378 x
+types : "male" "salmon" "salmon"
+operators : + - * / =
+n : 5
+answer : 971639.0
+
+
+251
+quantities : 14,797 4,969 x
+types : "suit" "suit" "bathing"
+operators : + - * / =
+n : 5
+answer : 19766.0
+
+
+252
+quantities : 1,426 2,000 x
+types : "house" "house" "house"
+operators : + - * / =
+n : 5
+answer : 574.0
+
+
+253
+quantities : 7,341 4,221 x
+types : "cell" "cell" "cell"
+operators : + - * / =
+n : 5
+answer : 3120.0
+
+
+254
+quantities : 9,792 3,513 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 6279.0
+
+
+255
+quantities : 10.62 2 1.59 13.95 x
+types : "dollar" "ticket" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 36.78
+
+
+256
+quantities : 11.0 19.0 7.0 8.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 29.0
+
+
+257
+quantities : 13.0 9 10 3 x
+types : "money" "hour" "hour" "hour" "money"
+operators : + - * / =
+n : 9
+answer : 286.0
+
+
+258
+quantities : 17.0 48.0 25.0 49.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 41.0
+
+
+259
+quantities : 20 26 20 6 58 x
+types : "sticker" "sticker" "sticker" "sticker" "sticker" "sticker"
+operators : + - * / =
+n : 11
+answer : 2.0
+
+
+260
+quantities : 6 6 8 18 x
+types : "van" "people" "bus" "people" "people"
+operators : + - * / =
+n : 9
+answer : 180.0
+
+
+261
+quantities : 91.0 24.0 6.0 11.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 50.0
+
+
+262
+quantities : 15 13 8 21 x
+types : "coin" "coin" "coin" "coin" "coin"
+operators : + - * / =
+n : 9
+answer : 15.0
+
+
+263
+quantities : 61 26 7 x
+types : "plate" "plate" "plate" "plate"
+operators : + - * / =
+n : 7
+answer : 28.0
+
+
+264
+quantities : 85.0 10 5.0 x
+types : "money" "book" "money" "money"
+operators : + - * / =
+n : 7
+answer : 35.0
+
+
+265
+quantities : 8.0 13.0 2.0 18.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 1.0
+
+
+266
+quantities : 20 12 20 5 8 x
+types : "sticker" "sticker" "sticker" "sticker" "sticker" "sticker"
+operators : + - * / =
+n : 11
+answer : 39.0
+
+
+267
+quantities : 30.0 49.0 46.0 58.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 67.0
+
+
+268
+quantities : 20 2 1 6 x
+types : "carton" "carton" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 118.0
+
+
+269
+quantities : 7.0 12.0 4.0 6.0 13.0 x
+types : "money" "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 11
+answer : 4.0
+
+
+270
+quantities : 10 1 3 16 x
+types : "book" "book" "book" "dollar" "dollar"
+operators : + - * / =
+n : 9
+answer : 224.0
+
+
+271
+quantities : 54 15 25 x
+types : "cupcake" "cupcake" "vanilla" "cupcake"
+operators : + - * / =
+n : 7
+answer : 14.0
+
+
+272
+quantities : 21 4 8 x
+types : "carton" "carton" "carton" "carton"
+operators : + - * / =
+n : 7
+answer : 9.0
+
+
+273
+quantities : 24 14 3 2 x
+types : "bicycle" "tricycle" "wheel" "wheel" "wheel"
+operators : + - * / =
+n : 9
+answer : 90.0
+
+
+274
+quantities : 109.0 2 13.0 11.0 x
+types : "money" "shirt" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 74.0
+
+
+275
+quantities : 9 3 x
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 12.0
+
+
+276
+quantities : x 9 4
+types : "pokemon" "card" "pokemon"
+operators : + - * / =
+n : 5
+answer : 13.0
+
+
+277
+quantities : 9 7 10 5 x
+types : "package" "package" "can" "can" "can"
+operators : + - * / =
+n : 9
+answer : 55.0
+
+
+278
+quantities : 2 7 1 1 x
+types : "ticket" "ticket" "ticket" "ticket" "ticket"
+operators : + - * / =
+n : 9
+answer : 9.0
+
+
+279
+quantities : 53 7 19 x
+types : "cupcake" "cupcake" "vanilla" "cupcake"
+operators : + - * / =
+n : 7
+answer : 32.0
+
+
+280
+quantities : 4 8 4 10 x
+types : "pack" "pack" "pack" "ball" "ball"
+operators : + - * / =
+n : 9
+answer : 160.0
+
+
+281
+quantities : 5 4 x
+types : "pizza" "slice" "slice"
+operators : + - * / =
+n : 5
+answer : 20.0
+
+
+282
+quantities : 20 x 5
+types : "mile" "mile" "gallon"
+operators : + - * / =
+n : 5
+answer : 100.0
+
+
+283
+quantities : 58 2 x
+types : "child" "child" "seat"
+operators : + - * / =
+n : 5
+answer : 29.0
+
+
+284
+quantities : 12 3 x
+types : "guest" "guest" "table"
+operators : + - * / =
+n : 5
+answer : 4.0
+
+
+285
+quantities : 15 12 x
+types : "dollar" "chair" "dollar"
+operators : + - * / =
+n : 5
+answer : 180.0
+
+
+286
+quantities : 0.75 0.25 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.5
+
+
+287
+quantities : 0.25 0.25 x
+types : "cup" "cup" "cup"
+operators : + - * / =
+n : 5
+answer : 0.5
+
+
+288
+quantities : 0.16666666666666666 0.5 x
+types : "mile" "mile" "DISTANCE"
+operators : + - * / =
+n : 5
+answer : 0.6666666666666666
+
+
+289
+quantities : 0.6666666666666666 0.3333333333333333 x
+types : "pie" "pie" "pie"
+operators : + - * / =
+n : 5
+answer : 0.3333333333333333
+
+
+290
+quantities : 0.75 0.5 x
+types : "inch" "inch" "tailor"
+operators : + - * / =
+n : 5
+answer : 0.25
+
+
+291
+quantities : 0.375 0.25 x
+types : "garment" "garment" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.625
+
+
+292
+quantities : 0.875 0.75 x
+types : "lap" "jogging" "lap"
+operators : + - * / =
+n : 5
+answer : 0.125
+
+
+293
+quantities : 0.3 0.2 x
+types : "foot" "foot" "foot"
+operators : + - * / =
+n : 5
+answer : 0.1
+
+
+294
+quantities : 0.3333333333333333 0.3333333333333333 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 0.6666666666666666
+
+
+295
+quantities : 0.125 0.125 x
+types : "scoop" "scoop" "scoop"
+operators : + - * / =
+n : 5
+answer : 0.25
+
+
+296
+quantities : 0.8 0.2 x
+types : "gallon" "gallon" "gallon"
+operators : + - * / =
+n : 5
+answer : 0.6
+
+
+297
+quantities : 0.6666666666666666 0.5 x
+types : "tablespoon" "tablespoon" "tablespoon"
+operators : + - * / =
+n : 5
+answer : 0.16666666666666666
+
+
+298
+quantities : 0.6 0.2 x
+types : "budget" "budget" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.8
+
+
+299
+quantities : 0.7 0.2 x
+types : "student" "student" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.9
+
+
+300
+quantities : 0.16666666666666666 0.6666666666666666 x
+types : "cup" "cup" "oil"
+operators : + - * / =
+n : 5
+answer : 0.8333333333333334
+
+
+301
+quantities : 0.2 0.4 x
+types : "total" "loaf" "loaf"
+operators : + - * / =
+n : 5
+answer : 0.6
+
+
+302
+quantities : 0.4 0.2 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.2
+
+
+303
+quantities : 0.625 0.25 x
+types : "cup" "cup" "flour"
+operators : + - * / =
+n : 5
+answer : 0.375
+
+
+304
+quantities : 0.2 0.4 x
+types : "bucket" "bucket" "bucket"
+operators : + - * / =
+n : 5
+answer : 0.6
+
+
+305
+quantities : 0.6 0.4 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.2
+
+
+306
+quantities : 0.5 0.125 x
+types : "student" "student" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.625
+
+
+307
+quantities : 0.8 0.1 x
+types : "inch" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 0.7
+
+
+308
+quantities : 0.25 0.375 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 0.625
+
+
+309
+quantities : 0.625 0.5 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.125
+
+
+310
+quantities : 0.5 0.1 x
+types : "carton" "carton" "milk"
+operators : + - * / =
+n : 5
+answer : 0.6
+
+
+311
+quantities : 0.375 0.5 x
+types : "inch" "inch" "hair"
+operators : + - * / =
+n : 5
+answer : 0.875
+
+
+312
+quantities : 0.16666666666666666 0.3333333333333333 x
+types : "apartment" "apartment" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.5
+
+
+313
+quantities : 0.8333333333333334 0.5 x
+types : "foot" "foot" "sandcastle"
+operators : + - * / =
+n : 5
+answer : 0.3333333333333333
+
+
+314
+quantities : 0.5 0.16666666666666666 x
+types : "tank" "tank" "gas"
+operators : + - * / =
+n : 5
+answer : 0.3333333333333333
+
+
+315
+quantities : 0.4 0.3 x
+types : "box" "box" "box"
+operators : + - * / =
+n : 5
+answer : 0.1
+
+
+316
+quantities : 0.2 0.7 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.9
+
+
+317
+quantities : 0.4 0.1 x
+types : "acre" "acre" "acre"
+operators : + - * / =
+n : 5
+answer : 0.3
+
+
+318
+quantities : 0.25 0.5 x
+types : "nail" "nail" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.75
+
+
+319
+quantities : 0.625 0.25 x
+types : "scoop" "scoop" "scoop"
+operators : + - * / =
+n : 5
+answer : 0.375
+
+
+320
+quantities : 0.7 0.6 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 0.1
+
+
+321
+quantities : 0.3 0.4 x
+types : "cup" "cup" "cup"
+operators : + - * / =
+n : 5
+answer : 0.7
+
+
+322
+quantities : 0.5 0.9 x
+types : "can" "can" "can"
+operators : + - * / =
+n : 5
+answer : 0.4
+
+
+323
+quantities : 0.125 0.5 x
+types : "inch" "inch" "amount"
+operators : + - * / =
+n : 5
+answer : 0.625
+
+
+324
+quantities : 0.2 0.1 x
+types : "bag" "bag" "bag"
+operators : + - * / =
+n : 5
+answer : 0.3
+
+
+325
+quantities : 0.75 0.5 x
+types : "gallon" "gallon" "gallon"
+operators : + - * / =
+n : 5
+answer : 0.25
+
+
+326
+quantities : 0.2 0.4 0.1 x
+types : "mile" "mile" "mile" "mile"
+operators : + - * / =
+n : 7
+answer : 0.7
+
+
+327
+quantities : 0.16666666666666666 0.16666666666666666 0.3333333333333333 x
+types : "bag" "bag" "bag" "bag"
+operators : + - * / =
+n : 7
+answer : 0.6666666666666666
+
+
+328
+quantities : 0.25 0.25 0.375 x
+types : "bottle" "bottle" "bottle" "bottle"
+operators : + - * / =
+n : 7
+answer : 0.875
+
+
+329
+quantities : 0.08333333333333333 0.75 0.08333333333333333 x
+types : "restaurant" "restaurant" "restaurant" "tart"
+operators : + - * / =
+n : 7
+answer : 0.9166666666666666
+
+
+330
+quantities : 0.1111111111111111 0.1111111111111111 0.6666666666666666 x
+types : "mile" "mile" "mile" "mile"
+operators : + - * / =
+n : 7
+answer : 0.8888888888888888
+
+
+331
+quantities : 0.16666666666666666 0.16666666666666666 0.08333333333333333 x
+types : "pound" "pound" "pound" "pound"
+operators : + - * / =
+n : 7
+answer : 0.4166666666666667
+
+
+332
+quantities : 0.3333333333333333 0.3333333333333333 0.16666666666666666 x
+types : "carton" "carton" "carton" "carton"
+operators : + - * / =
+n : 7
+answer : 0.8333333333333334
+
+
+333
+quantities : 0.125 0.125 0.5 x
+types : "bin" "bin" "bin" "bin"
+operators : + - * / =
+n : 7
+answer : 0.75
+
+
+334
+quantities : 0.3333333333333333 0.3333333333333333 0.08333333333333333 x
+types : "ton" "ton" "ton" "ton"
+operators : + - * / =
+n : 7
+answer : 0.75
+
+
+335
+quantities : 0.08333333333333333 0.08333333333333333 0.6666666666666666 x
+types : "mile" "mile" "mile" "mile"
+operators : + - * / =
+n : 7
+answer : 0.8333333333333334
+
+
+336
+quantities : 0.16666666666666666 0.4166666666666667 0.08333333333333333 x
+types : "centimeter" "centimeter" "centimeter" "centimeter"
+operators : + - * / =
+n : 7
+answer : 0.6666666666666666
+
+
+337
+quantities : 0.3 0.1 0.4 x
+types : "mile" "mile" "mile" "mile"
+operators : + - * / =
+n : 7
+answer : 0.8
+
+
+338
+quantities : 0.16666666666666666 0.16666666666666666 0.5 x
+types : "ton" "ton" "ton" "ton"
+operators : + - * / =
+n : 7
+answer : 0.8333333333333334
+
+
+339
+quantities : 0.25 0.375 0.125 x
+types : "gallon" "gallon" "gallon" "gallon"
+operators : + - * / =
+n : 7
+answer : 0.75
+
+
+340
+quantities : 0.5 0.1 0.1 x
+types : "light-year" "light-year" "light-year" "light-year"
+operators : + - * / =
+n : 7
+answer : 0.7
+
+
+341
+quantities : 0.3333333333333333 0.3333333333333333 0.2222222222222222 x
+types : "centimeter" "centimeter" "centimeter" "centimeter"
+operators : + - * / =
+n : 7
+answer : 0.8888888888888888
+
+
+342
+quantities : 0.2 0.1 0.2 x
+types : "cup" "cup" "cup" "cup"
+operators : + - * / =
+n : 7
+answer : 0.5
+
+
+343
+quantities : 0.25 0.4166666666666667 0.25 x
+types : "pitcher" "pitcher" "pitcher" "pitcher"
+operators : + - * / =
+n : 7
+answer : 0.9166666666666666
+
+
+344
+quantities : 0.3333333333333333 0.3333333333333333 0.08333333333333333 x
+types : "mile" "mile" "mile" "mile"
+operators : + - * / =
+n : 7
+answer : 0.75
+
+
+345
+quantities : 0.16666666666666666 0.3333333333333333 0.16666666666666666 x
+types : "truck-load" "truck-load" "truck-load" "truck-load"
+operators : + - * / =
+n : 7
+answer : 0.6666666666666666
+
+
+346
+quantities : 0.08333333333333333 0.3333333333333333 0.4166666666666667 x
+types : "ounce" "ounce" "ounce" "weight"
+operators : + - * / =
+n : 7
+answer : 0.8333333333333334
+
+
+347
+quantities : 0.16666666666666666 1.1666666666666667 x
+types : "cup" "cup" "cup"
+operators : + - * / =
+n : 5
+answer : 1.3333333333333333
+
+
+348
+quantities : 2.8333333333333335 2.8333333333333335 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 5.666666666666667
+
+
+349
+quantities : 3.8333333333333335 0.16666666666666666 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 3.6666666666666665
+
+
+350
+quantities : 7.125 0.625 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 6.5
+
+
+351
+quantities : 10 5.1 x
+types : "ton" "ton" "cement"
+operators : + - * / =
+n : 5
+answer : 15.1
+
+
+352
+quantities : 1 8.8 x
+types : "bucket" "bucket" "water"
+operators : + - * / =
+n : 5
+answer : 9.8
+
+
+353
+quantities : 1.125 2.125 x
+types : "lap" "lap" "lap"
+operators : + - * / =
+n : 5
+answer : 3.25
+
+
+354
+quantities : 3 6.8 x
+types : "gallon" "gallon" "gallon"
+operators : + - * / =
+n : 5
+answer : 9.8
+
+
+355
+quantities : 2.6666666666666665 2.6666666666666665 x
+types : "bottle" "bottle" "soda"
+operators : + - * / =
+n : 5
+answer : 5.333333333333333
+
+
+356
+quantities : 11.166666666666666 0.8333333333333334 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 10.333333333333334
+
+
+357
+quantities : 1.25 5.25 x
+types : "inch" "inch" "DISTANCE"
+operators : + - * / =
+n : 5
+answer : 6.5
+
+
+358
+quantities : 10.2 8.6 x
+types : "page" "page" "page"
+operators : + - * / =
+n : 5
+answer : 18.8
+
+
+359
+quantities : 3.6666666666666665 2.3333333333333335 x
+types : "foot" "foot" "sandcastle"
+operators : + - * / =
+n : 5
+answer : 1.3333333333333333
+
+
+360
+quantities : x 3 1.1666666666666667
+types : "caterpillar" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 1.8333333333333335
+
+
+361
+quantities : 3.25 0.25 x
+types : "pint" "pint" "pint"
+operators : + - * / =
+n : 5
+answer : 3.5
+
+
+362
+quantities : 8.75 6 x
+types : "bucket" "bucket" "bucket"
+operators : + - * / =
+n : 5
+answer : 2.75
+
+
+363
+quantities : 1 2.3333333333333335 x
+types : "foot" "foot" "foot"
+operators : + - * / =
+n : 5
+answer : 1.3333333333333333
+
+
+364
+quantities : x 7.666666666666667 3.3333333333333335
+types : "line" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 4.333333333333333
+
+
+365
+quantities : 7.75 7 x
+types : "gallon" "gallon" "gallon"
+operators : + - * / =
+n : 5
+answer : 14.75
+
+
+366
+quantities : 19.833333333333332 9.166666666666666 x
+types : "mile" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 10.666666666666666
+
+
+367
+quantities : 0.6 0.4 x
+types : "pound" "pound" "block"
+operators : + - * / =
+n : 5
+answer : 0.2
+
+
+368
+quantities : 8.2 1.6 x
+types : "mile" "mile" "DISTANCE"
+operators : + - * / =
+n : 5
+answer : 9.8
+
+
+369
+quantities : 0.41 0.33 x
+types : "meter" "meter" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 0.08
+
+
+370
+quantities : 0.1 0.4 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 0.5
+
+
+371
+quantities : 9.91 4.11 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 14.02
+
+
+372
+quantities : 0.81 0.35 x
+types : "inch" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 0.46
+
+
+373
+quantities : 6 3.12 x
+types : "pound" "pound" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 9.12
+
+
+374
+quantities : 0.36 0.05 x
+types : "pound" "pound" "honey"
+operators : + - * / =
+n : 5
+answer : 0.31
+
+
+375
+quantities : 0.9 0.7 x
+types : "inch" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 0.2
+
+
+376
+quantities : 0.32 0.21 x
+types : "inch" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 0.53
+
+
+377
+quantities : 0.25 0.16 x
+types : "gram" "gram" "pepper"
+operators : + - * / =
+n : 5
+answer : 0.09
+
+
+378
+quantities : 5.91 8.11 x
+types : "ton" "ton" "ton"
+operators : + - * / =
+n : 5
+answer : 14.02
+
+
+379
+quantities : 0.2 0.4 x
+types : "inch" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 0.6
+
+
+380
+quantities : 9.8 5.2 x
+types : "ounce" "ounce" "floor"
+operators : + - * / =
+n : 5
+answer : 4.6
+
+
+381
+quantities : 3.42 2.2 x
+types : "pound" "pound" "fruit"
+operators : + - * / =
+n : 5
+answer : 1.22
+
+
+382
+quantities : 0.14 0.38 x
+types : "kilogram" "kilogram" "kilogram"
+operators : + - * / =
+n : 5
+answer : 0.52
+
+
+383
+quantities : 4 8.7 x
+types : "pound" "pound" "pumpkin"
+operators : + - * / =
+n : 5
+answer : 12.7
+
+
+384
+quantities : 4.1 2.4 x
+types : "pound" "pound" "sand"
+operators : + - * / =
+n : 5
+answer : 1.7
+
+
+385
+quantities : 4.4 2.86 x
+types : "foot" "foot" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 7.26
+
+
+386
+quantities : 8.9 2.3 x
+types : "centimeter" "centimeter" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 6.6
+
+
+387
+quantities : x 37 19
+types : "cookie" "bag" "cookie"
+operators : + - * / =
+n : 5
+answer : 703
+
+
+388
+quantities : 14 6 x
+types : "seat" "people" "people"
+operators : + - * / =
+n : 5
+answer : 84
+
+
+389
+quantities : 261 23 x
+types : "fishbowl" "fish" "fish"
+operators : + - * / =
+n : 5
+answer : 6003
+
+
+390
+quantities : 21 8 x
+types : "pizza" "slice" "slice"
+operators : + - * / =
+n : 5
+answer : 168
+
+
+391
+quantities : 303 28 x
+types : "basket" "egg" "egg"
+operators : + - * / =
+n : 5
+answer : 8484
+
+
+392
+quantities : 37 17 x
+types : "basket" "apple" "apple"
+operators : + - * / =
+n : 5
+answer : 629
+
+
+393
+quantities : 56 9 x
+types : "book" "bookshelf" "book"
+operators : + - * / =
+n : 5
+answer : 504
+
+
+394
+quantities : 4 122 x 4
+types : "continent" "book" "book" "continent"
+operators : + - * / =
+n : 7
+answer : 488
+
+
+395
+quantities : 8 x 1785.0
+types : "stone" "money" "money"
+operators : + - * / =
+n : 5
+answer : 14280
+
+
+396
+quantities : 45 8 x
+types : "sack" "section" "sack"
+operators : + - * / =
+n : 5
+answer : 360
+
+
+397
+quantities : 83 x 6
+types : "sack" "sack" "day"
+operators : + - * / =
+n : 5
+answer : 498
+
+
+398
+quantities : 324 x 9
+types : "drum" "drum" "day"
+operators : + - * / =
+n : 5
+answer : 2916
+
+
+399
+quantities : 7 44 x
+types : "ticket" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 308
+
+
+400
+quantities : 4 246 x
+types : "section" "people" "people"
+operators : + - * / =
+n : 5
+answer : 984
+
+
+401
+quantities : 5 28 x
+types : "mobile" "clown" "clown"
+operators : + - * / =
+n : 5
+answer : 140
+
+
+402
+quantities : 378 6 x
+types : "juggler" "ball" "ball"
+operators : + - * / =
+n : 5
+answer : 2268
+
+
+403
+quantities : 934 7 x
+types : "crown" "feather" "feather"
+operators : + - * / =
+n : 5
+answer : 6538
+
+
+404
+quantities : 8 478 x
+types : "book" "page" "page"
+operators : + - * / =
+n : 5
+answer : 3824
+
+
+405
+quantities : 49 9 x
+types : "booklet" "page" "page"
+operators : + - * / =
+n : 5
+answer : 441
+
+
+406
+quantities : 6 33 x
+types : "author" "book" "book"
+operators : + - * / =
+n : 5
+answer : 198
+
+
+407
+quantities : 80 8 x
+types : "crayon" "crayon" "box"
+operators : + - * / =
+n : 5
+answer : 10
+
+
+408
+quantities : 700 x 100
+types : "sheet" "box" "sheet"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+409
+quantities : 4 x 32
+types : "room" "painting" "painting"
+operators : + - * / =
+n : 5
+answer : 8
+
+
+410
+quantities : 81 9 x
+types : "clip" "box" "paper"
+operators : + - * / =
+n : 5
+answer : 9
+
+
+411
+quantities : 420 x 7
+types : "seedling" "packet" "seed"
+operators : + - * / =
+n : 5
+answer : 60
+
+
+412
+quantities : 5 30 x
+types : "glass" "glass" "pitcher"
+operators : + - * / =
+n : 5
+answer : 6
+
+
+413
+quantities : x 20 80
+types : "sack" "piece" "piece"
+operators : + - * / =
+n : 5
+answer : 4
+
+
+414
+quantities : 140 x 7
+types : "nail" "station" "nail"
+operators : + - * / =
+n : 5
+answer : 20
+
+
+415
+quantities : 8 56 x
+types : "carving" "carving" "shelf"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+416
+quantities : 6 54 x
+types : "neighbor" "animal" "number"
+operators : + - * / =
+n : 5
+answer : 9
+
+
+417
+quantities : 49 7 x
+types : "block" "block" "color"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+418
+quantities : 5 50 x
+types : "member" "ball" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 10
+
+
+419
+quantities : 9 x 72
+types : "friend" "number" "sticker"
+operators : + - * / =
+n : 5
+answer : 8
+
+
+420
+quantities : 5 35 x
+types : "boy" "marble" "boy"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+421
+quantities : 48 x 6
+types : "papers" "papers" "cousin"
+operators : + - * / =
+n : 5
+answer : 8
+
+
+422
+quantities : x 4 36
+types : "bag" "ball" "ball"
+operators : + - * / =
+n : 5
+answer : 9
+
+
+423
+quantities : 63 9 x
+types : "magazine" "magazine" "box"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+424
+quantities : 88 8 x
+types : "stone" "bracelet" "flower"
+operators : + - * / =
+n : 5
+answer : 11
+
+
+425
+quantities : 140 14 x
+types : "stone" "piece" "bracelet"
+operators : + - * / =
+n : 5
+answer : 10
+
+
+426
+quantities : 3 36 x
+types : "bracelet" "stone" "stone"
+operators : + - * / =
+n : 5
+answer : 12
+
+
+427
+quantities : 48 8 x
+types : "stone" "type" "bracelet"
+operators : + - * / =
+n : 5
+answer : 6
+
+
+428
+quantities : 5 35 x
+types : "cookie" "cookie" "cookie"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+429
+quantities : 54 9 x
+types : "seed" "can" "seed"
+operators : + - * / =
+n : 5
+answer : 6
+
+
+430
+quantities : 56 8 x
+types : "tomato" "tomato" "jar"
+operators : + - * / =
+n : 5
+answer : 7
+
+
+431
+quantities : x 2 18
+types : "glass" "lemon" "lemon"
+operators : + - * / =
+n : 5
+answer : 9
+
+
+432
+quantities : 24 x 1
+types : "potato" "potato" "person"
+operators : + - * / =
+n : 5
+answer : 8
+
+
+433
+quantities : 12 3 x
+types : "piece" "piece" "piece"
+operators : + - * / =
+n : 5
+answer : 4
+
+
+434
+quantities : 380 57 x
+types : "lego" "lego" "lego"
+operators : + - * / =
+n : 5
+answer : 323
+
+
+435
+quantities : 35 x 83
+types : "muffin" "muffin" "muffin"
+operators : + - * / =
+n : 5
+answer : 48
+
+
+436
+quantities : 1400 290 x
+types : "crayon" "crayon" "crayon"
+operators : + - * / =
+n : 5
+answer : 1110
+
+
+437
+quantities : 10 22 x
+types : "sticker" "page" "sticker"
+operators : + - * / =
+n : 5
+answer : 220
+
+
+438
+quantities : 96 8 x
+types : "cupcake" "child" "person"
+operators : + - * / =
+n : 5
+answer : 12
+
+
+439
+quantities : 639 504 x
+types : "crayon" "crayon" "crayon"
+operators : + - * / =
+n : 5
+answer : 135
+
+
+440
+quantities : 85 48 x
+types : "peanut" "peanut" "peanut"
+operators : + - * / =
+n : 5
+answer : 133
+
+
+441
+quantities : 813 125 x
+types : "stamp" "stamp" "stamp"
+operators : + - * / =
+n : 5
+answer : 688
+
+
+442
+quantities : 6 71 x
+types : "package" "package" "t-shirt"
+operators : + - * / =
+n : 5
+answer : 426
+
+
+443
+quantities : 648 4 x
+types : "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 162
+
+
+444
+quantities : 143 11 x
+types : "sandwich" "niece" "niece"
+operators : + - * / =
+n : 5
+answer : 13
+
+
+445
+quantities : 217 109 x
+types : "marker" "marker" "marker"
+operators : + - * / =
+n : 5
+answer : 326
+
+
+446
+quantities : 126 81 x
+types : "dvd" "dvd" "dvd"
+operators : + - * / =
+n : 5
+answer : 45
+
+
+447
+quantities : x 489 2778
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 2289
+
+
+448
+quantities : 93 15 x
+types : "cookie" "cookie" "cookie"
+operators : + - * / =
+n : 5
+answer : 78
+
+
+449
+quantities : 121 x 22
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 99
+
+
+450
+quantities : x 183 593
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 776
+
+
+451
+quantities : 2315 1028 x
+types : "marker" "marker" "marker"
+operators : + - * / =
+n : 5
+answer : 3343
+
+
+452
+quantities : 344 136 x
+types : "book" "rest" "book"
+operators : + - * / =
+n : 5
+answer : 208
+
+
+453
+quantities : 1222 513 x
+types : "balloon" "balloon" "balloon"
+operators : + - * / =
+n : 5
+answer : 208
+
+
+454
+quantities : 223 95 x
+types : "whistle" "whistle" "whistle"
+operators : + - * / =
+n : 5
+answer : 128
+
+
+455
+quantities : 323 175 x
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 498
+
+
+456
+quantities : 27 18 x
+types : "package" "piece" "piece"
+operators : + - * / =
+n : 5
+answer : 486
+
+
+457
+quantities : 5.00 4.28 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 0.72
+
+
+458
+quantities : 3 1.54 x
+types : "ball" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 4.62
+
+
+459
+quantities : 20 8 3 x
+types : "dollar" "dollar" "dollar" "UNKNOWN"
+operators : + - * / =
+n : 7
+answer : 9
+
+
+460
+quantities : 48 4 x
+types : "doughnut" "box" "doughnut"
+operators : + - * / =
+n : 5
+answer : 12
+
+
+461
+quantities : 5 250 x
+types : "vacation" "mile" "mile"
+operators : + - * / =
+n : 5
+answer : 1250
+
+
+462
+quantities : 0.34 x
+types : "dollar" "dollar"
+operators : + - * / =
+n : 3
+answer : 134
+
+
+463
+quantities : 5256 2987 x
+types : "grown-up" "child" "people"
+operators : + - * / =
+n : 5
+answer : 8243
+
+
+464
+quantities : 4 x 4.80
+types : "dvd" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 1.20
+
+
+465
+quantities : 3409 145 x
+types : "piece" "piece" "rest"
+operators : + - * / =
+n : 5
+answer : 3264
+
+
+466
+quantities : 1250 3 x
+types : "people" "people" "people"
+operators : + - * / =
+n : 5
+answer : 3750
+
+
+467
+quantities : 8 45 x
+types : "bus" "student" "student"
+operators : + - * / =
+n : 5
+answer : 360
+
+
+468
+quantities : 124 3 x
+types : "student" "star" "star"
+operators : + - * / =
+n : 5
+answer : 372
+
+
+469
+quantities : 5.0 x
+types : "hour" "hour"
+operators : + - * / =
+n : 3
+answer : 5
+
+
+470
+quantities : 1134 1475 3 x
+types : "mile" "mile" "week" "mile"
+operators : + - * / =
+n : 7
+answer : 7827
+
+
+471
+quantities : 6 34 x
+types : "student" "table" "student"
+operators : + - * / =
+n : 5
+answer : 204
+
+
+472
+quantities : 15 5 x
+types : "dog" "puppy" "puppy"
+operators : + - * / =
+n : 5
+answer : 75
+
+
+473
+quantities : 127 88 x
+types : "apple" "apple" "apple"
+operators : + - * / =
+n : 5
+answer : 39
+
+
+474
+quantities : 4 x 6
+types : "book" "book" "week"
+operators : + - * / =
+n : 5
+answer : 48
+
+
+475
+quantities : 37 8 x
+types : "people" "piece" "piece"
+operators : + - * / =
+n : 5
+answer : 296
+
+
+476
+quantities : 22 11 x
+types : "player" "basketball" "basketball"
+operators : + - * / =
+n : 5
+answer : 242
+
+
+477
+quantities : 2 9 x
+types : "ounce" "pound" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 18
+
+
+478
+quantities : 65899 119 x
+types : "people" "people" "people"
+operators : + - * / =
+n : 5
+answer : 66018
+
+
+479
+quantities : 16 14 x 5
+types : "pecan" "pie" "row" "pie"
+operators : + - * / =
+n : 7
+answer : 6
+
+
+480
+quantities : 3.75 3 x
+types : "money" "people" "money"
+operators : + - * / =
+n : 5
+answer : 1.25
+
+
+481
+quantities : 74 35 18 3 x
+types : "cent" "cent" "cent" "pencil" "cost"
+operators : + - * / =
+n : 9
+answer : 7
+
+
+482
+quantities : 40 7 x
+types : "marker" "package" "marker"
+operators : + - * / =
+n : 5
+answer : 5
+
+
+483
+quantities : 4 17 x
+types : "book" "chapter" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 68
+
+
+484
+quantities : 5 2 x
+types : "cup" "loaf" "loaf"
+operators : + - * / =
+n : 5
+answer : 2.5
+
+
+485
+quantities : 1.30 0 x
+types : "dollar" "person" "nickel"
+operators : + - * / =
+n : 5
+answer : 26
+
+
+486
+quantities : 7 5 x 15
+types : "student" "minute" "student" "minute"
+operators : + - * / =
+n : 7
+answer : 21
+
+
+487
+quantities : 144 3 x
+types : "bee" "Hilt" "bee"
+operators : + - * / =
+n : 5
+answer : 432
+
+
+488
+quantities : 30 x 4
+types : "foot" "UNKNOWN" "Hilt"
+operators : + - * / =
+n : 5
+answer : 120
+
+
+489
+quantities : 212 68 x
+types : "fish" "fish" "fish"
+operators : + - * / =
+n : 5
+answer : 280
+
+
+490
+quantities : 212 x 280
+types : "fish" "fish" "fish"
+operators : + - * / =
+n : 5
+answer : 68
+
+
+491
+quantities : 25.0 20.0 75.0 279.0 x
+types : "money" "money" "money" "money" "money"
+operators : + - * / =
+n : 9
+answer : 159
+
+
+492
+quantities : 36 85 x
+types : "flea" "flea" "flea"
+operators : + - * / =
+n : 5
+answer : 121
+
+
+493
+quantities : 600 327 x
+types : "bag" "bag" "bag"
+operators : + - * / =
+n : 5
+answer : 273
+
+
+494
+quantities : 7 4 x
+types : "box" "dog" "dog"
+operators : + - * / =
+n : 5
+answer : 28
+
+
+495
+quantities : 532 750 x
+types : "people" "seat" "seat"
+operators : + - * / =
+n : 5
+answer : 218
+
+
+496
+quantities : 23 x 45
+types : "pound" "pound" "bag"
+operators : + - * / =
+n : 5
+answer : 1035
+
+
+497
+quantities : 2 x 3
+types : "mile" "mile" "week"
+operators : + - * / =
+n : 5
+answer : 42
+
+
+498
+quantities : 2 12 23.36 x
+types : "dollar" "cent" "dollar" "minute"
+operators : + - * / =
+n : 7
+answer : 178.0
+
+
+499
+quantities : 16,000 0.8 x
+types : "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 20000.0
+
+
+500
+quantities : 190 0.04 500 x
+types : "dollar" "sale" "dollar" "sale"
+operators : + - * / =
+n : 7
+answer : 7750.0
+
+
+501
+quantities : 4 5 x 29
+types : "tree" "foot" "year" "foot"
+operators : + - * / =
+n : 7
+answer : 5.0
+
+
+502
+quantities : 77.75 9.5 x
+types : "inch" "inch" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 68.25
+
+
+503
+quantities : 0.20 4 6 x
+types : "number" "number" "number" "UNKNOWN"
+operators : + - * / =
+n : 7
+answer : 50.0
+
+
+504
+quantities : 1800000 0.75 x
+types : "ton" "demand" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 2400000.0
+
+
+505
+quantities : 12 84 x
+types : "ounce" "cent" "cost"
+operators : + - * / =
+n : 5
+answer : 7.0
+
+
+506
+quantities : 177 500 19 x
+types : "dollar" "dollar" "week" "week"
+operators : + - * / =
+n : 7
+answer : 17.0
+
+
+507
+quantities : 45 x 225 450
+types : "dollar" "hour" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 5.0
+

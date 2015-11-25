@@ -1,0 +1,5 @@
+quantities : x 90,171 16,320
+types : "people" "people" "people"
+operators : + - * / =
+n : 5
+answer : 106491.0

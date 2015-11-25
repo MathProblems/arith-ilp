@@ -1,0 +1,5 @@
+quantities : 56 9 x
+types : "book" "bookshelf" "book"
+operators : + - * / =
+n : 5
+answer : 504

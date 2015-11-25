@@ -1,0 +1,5 @@
+quantities : 85 48 x
+types : "peanut" "peanut" "peanut"
+operators : + - * / =
+n : 5
+answer : 133

@@ -1,0 +1,5 @@
+quantities : 13 14 x
+types : "game" "month" "game"
+operators : + - * / =
+n : 5
+answer : 182.0

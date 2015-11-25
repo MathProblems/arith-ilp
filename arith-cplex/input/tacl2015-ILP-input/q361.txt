@@ -1,0 +1,5 @@
+quantities : 3.25 0.25 x
+types : "pint" "pint" "pint"
+operators : + - * / =
+n : 5
+answer : 3.5

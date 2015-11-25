@@ -1,0 +1,5 @@
+quantities : 1 12 x
+types : "dozen" "bird" "bird"
+operators : + - * / =
+n : 5
+answer : 12.0

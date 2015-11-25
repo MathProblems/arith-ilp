@@ -1,0 +1,5 @@
+quantities : 121 x 22
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 99

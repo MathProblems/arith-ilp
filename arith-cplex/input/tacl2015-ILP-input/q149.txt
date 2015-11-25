@@ -1,0 +1,5 @@
+quantities : 6 5 x
+types : "marble" "Benny" "marble"
+operators : + - * / =
+n : 5
+answer : 30.0

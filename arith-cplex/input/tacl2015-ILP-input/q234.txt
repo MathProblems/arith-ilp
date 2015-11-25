@@ -1,0 +1,5 @@
+quantities : 1,346 6,444 x
+types : "muff" "muff" "muff"
+operators : + - * / =
+n : 5
+answer : 7790.0

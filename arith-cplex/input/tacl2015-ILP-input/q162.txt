@@ -1,0 +1,5 @@
+quantities : 8 3 x
+types : "pencil" "person" "pencil"
+operators : + - * / =
+n : 5
+answer : 24.0

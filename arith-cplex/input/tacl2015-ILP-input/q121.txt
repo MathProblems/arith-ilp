@@ -1,0 +1,5 @@
+quantities : 48 8 x 12
+types : "book" "Mike" "dozen" "book"
+operators : + - * / =
+n : 7
+answer : 32.0

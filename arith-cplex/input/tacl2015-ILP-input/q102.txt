@@ -1,0 +1,5 @@
+quantities : 45 5 x
+types : "hour" "day" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 9.0

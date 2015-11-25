@@ -1,0 +1,5 @@
+quantities : 324 x 9
+types : "drum" "drum" "day"
+operators : + - * / =
+n : 5
+answer : 2916

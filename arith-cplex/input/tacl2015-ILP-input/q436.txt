@@ -1,0 +1,5 @@
+quantities : 1400 290 x
+types : "crayon" "crayon" "crayon"
+operators : + - * / =
+n : 5
+answer : 1110

@@ -1,0 +1,5 @@
+quantities : 40 7 x
+types : "marker" "package" "marker"
+operators : + - * / =
+n : 5
+answer : 5

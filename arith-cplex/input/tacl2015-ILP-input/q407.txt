@@ -1,0 +1,5 @@
+quantities : 80 8 x
+types : "crayon" "crayon" "box"
+operators : + - * / =
+n : 5
+answer : 10

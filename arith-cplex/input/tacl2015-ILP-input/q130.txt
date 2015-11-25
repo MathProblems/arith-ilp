@@ -1,0 +1,5 @@
+quantities : 3 5 x
+types : "calorie" "bar" "calorie"
+operators : + - * / =
+n : 5
+answer : 15.0

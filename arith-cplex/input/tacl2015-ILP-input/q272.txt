@@ -1,0 +1,5 @@
+quantities : 21 4 8 x
+types : "carton" "carton" "carton" "carton"
+operators : + - * / =
+n : 7
+answer : 9.0

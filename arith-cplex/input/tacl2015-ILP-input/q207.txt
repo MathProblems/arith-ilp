@@ -1,0 +1,5 @@
+quantities : 14 1 x
+types : "toothfairy" "person" "money"
+operators : + - * / =
+n : 5
+answer : 11.9

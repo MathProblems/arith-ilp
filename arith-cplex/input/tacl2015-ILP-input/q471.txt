@@ -1,0 +1,5 @@
+quantities : 6 34 x
+types : "student" "table" "student"
+operators : + - * / =
+n : 5
+answer : 204

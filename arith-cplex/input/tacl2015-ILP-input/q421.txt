@@ -1,0 +1,5 @@
+quantities : 48 x 6
+types : "papers" "papers" "cousin"
+operators : + - * / =
+n : 5
+answer : 8

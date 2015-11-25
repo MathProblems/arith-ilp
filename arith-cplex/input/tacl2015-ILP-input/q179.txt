@@ -1,0 +1,5 @@
+quantities : 24 3 x
+types : "crayon" "person" "person"
+operators : + - * / =
+n : 5
+answer : 8.0

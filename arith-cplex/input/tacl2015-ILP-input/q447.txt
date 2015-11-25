@@ -1,0 +1,5 @@
+quantities : x 489 2778
+types : "marble" "marble" "marble"
+operators : + - * / =
+n : 5
+answer : 2289

@@ -1,0 +1,5 @@
+quantities : 5 3 x
+types : "card" "card" "card"
+operators : + - * / =
+n : 5
+answer : 2.0

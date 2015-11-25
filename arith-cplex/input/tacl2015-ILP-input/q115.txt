@@ -1,0 +1,5 @@
+quantities : 25.00 96 x 12
+types : "dollar" "house" "dozen" "dollar"
+operators : + - * / =
+n : 7
+answer : 200.0

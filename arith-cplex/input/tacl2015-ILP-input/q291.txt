@@ -1,0 +1,5 @@
+quantities : 0.375 0.25 x
+types : "garment" "garment" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 0.625

@@ -1,0 +1,5 @@
+quantities : 4.4 2.86 x
+types : "foot" "foot" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 7.26

@@ -1,0 +1,5 @@
+quantities : 51 23 x
+types : "pumpkin" "pumpkin" "pumpkin"
+operators : + - * / =
+n : 5
+answer : 74.0

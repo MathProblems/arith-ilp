@@ -1,0 +1,5 @@
+quantities : 4 6.06 4.45 x
+types : "pack" "dollar" "dollar" "dollar"
+operators : + - * / =
+n : 7
+answer : 23.86

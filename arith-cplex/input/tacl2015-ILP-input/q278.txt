@@ -1,0 +1,5 @@
+quantities : 2 7 1 1 x
+types : "ticket" "ticket" "ticket" "ticket" "ticket"
+operators : + - * / =
+n : 9
+answer : 9.0

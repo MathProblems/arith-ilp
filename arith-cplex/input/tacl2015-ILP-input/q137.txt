@@ -1,0 +1,5 @@
+quantities : 4 2 x
+types : "child" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 8.0

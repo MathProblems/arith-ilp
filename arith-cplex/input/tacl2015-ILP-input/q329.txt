@@ -1,0 +1,5 @@
+quantities : 0.08333333333333333 0.75 0.08333333333333333 x
+types : "restaurant" "restaurant" "restaurant" "tart"
+operators : + - * / =
+n : 7
+answer : 0.9166666666666666

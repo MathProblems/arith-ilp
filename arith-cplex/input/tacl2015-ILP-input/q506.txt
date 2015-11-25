@@ -1,0 +1,5 @@
+quantities : 177 500 19 x
+types : "dollar" "dollar" "week" "week"
+operators : + - * / =
+n : 7
+answer : 17.0

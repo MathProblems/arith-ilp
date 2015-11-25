@@ -1,0 +1,5 @@
+quantities : 77.75 9.5 x
+types : "inch" "inch" "UNKNOWN"
+operators : + - * / =
+n : 5
+answer : 68.25

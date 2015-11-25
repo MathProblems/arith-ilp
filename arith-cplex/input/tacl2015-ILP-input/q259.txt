@@ -1,0 +1,5 @@
+quantities : 20 26 20 6 58 x
+types : "sticker" "sticker" "sticker" "sticker" "sticker" "sticker"
+operators : + - * / =
+n : 11
+answer : 2.0

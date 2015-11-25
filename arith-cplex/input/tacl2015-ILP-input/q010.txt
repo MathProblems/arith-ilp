@@ -1,0 +1,5 @@
+quantities : 0.5 8 x 12
+types : "half" "dollar" "allowance" "dollar"
+operators : + - * / =
+n : 7
+answer : 8.0

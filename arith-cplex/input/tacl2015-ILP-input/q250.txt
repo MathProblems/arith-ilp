@@ -1,0 +1,5 @@
+quantities : 712,261 259,378 x
+types : "male" "salmon" "salmon"
+operators : + - * / =
+n : 5
+answer : 971639.0

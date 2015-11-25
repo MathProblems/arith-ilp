@@ -1,0 +1,5 @@
+quantities : x 37 19
+types : "cookie" "bag" "cookie"
+operators : + - * / =
+n : 5
+answer : 703

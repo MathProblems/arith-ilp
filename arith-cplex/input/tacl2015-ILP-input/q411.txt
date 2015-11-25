@@ -1,0 +1,5 @@
+quantities : 420 x 7
+types : "seedling" "packet" "seed"
+operators : + - * / =
+n : 5
+answer : 60

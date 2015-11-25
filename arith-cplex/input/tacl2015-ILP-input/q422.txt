@@ -1,0 +1,5 @@
+quantities : x 4 36
+types : "bag" "ball" "ball"
+operators : + - * / =
+n : 5
+answer : 9

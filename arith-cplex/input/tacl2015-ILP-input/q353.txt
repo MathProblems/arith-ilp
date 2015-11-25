@@ -1,0 +1,5 @@
+quantities : 1.125 2.125 x
+types : "lap" "lap" "lap"
+operators : + - * / =
+n : 5
+answer : 3.25

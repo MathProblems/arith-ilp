@@ -1,0 +1,5 @@
+quantities : 13 55 x
+types : "peach" "peach" "stand"
+operators : + - * / =
+n : 5
+answer : 42.0

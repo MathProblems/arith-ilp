@@ -1,0 +1,5 @@
+quantities : 3.6666666666666665 2.3333333333333335 x
+types : "foot" "foot" "sandcastle"
+operators : + - * / =
+n : 5
+answer : 1.3333333333333333

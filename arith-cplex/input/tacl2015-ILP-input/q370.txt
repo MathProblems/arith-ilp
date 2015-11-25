@@ -1,0 +1,5 @@
+quantities : 0.1 0.4 x
+types : "pound" "pound" "pound"
+operators : + - * / =
+n : 5
+answer : 0.5

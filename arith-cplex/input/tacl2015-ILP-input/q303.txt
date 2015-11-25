@@ -1,0 +1,5 @@
+quantities : 0.625 0.25 x
+types : "cup" "cup" "flour"
+operators : + - * / =
+n : 5
+answer : 0.375

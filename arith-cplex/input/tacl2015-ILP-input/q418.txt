@@ -1,0 +1,5 @@
+quantities : 5 50 x
+types : "member" "ball" "LENGTH"
+operators : + - * / =
+n : 5
+answer : 10

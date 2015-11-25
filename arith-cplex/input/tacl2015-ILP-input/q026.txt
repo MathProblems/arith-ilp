@@ -1,0 +1,5 @@
+quantities : 2 9 x
+types : "apple" "apple" "apple"
+operators : + - * / =
+n : 5
+answer : 11.0

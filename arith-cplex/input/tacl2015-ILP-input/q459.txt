@@ -1,0 +1,5 @@
+quantities : 20 8 3 x
+types : "dollar" "dollar" "dollar" "UNKNOWN"
+operators : + - * / =
+n : 7
+answer : 9

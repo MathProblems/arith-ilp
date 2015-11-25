@@ -1,0 +1,5 @@
+quantities : x 3 1.1666666666666667
+types : "caterpillar" "inch" "inch"
+operators : + - * / =
+n : 5
+answer : 1.8333333333333335

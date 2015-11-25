@@ -1,0 +1,5 @@
+quantities : 49 9 x
+types : "booklet" "page" "page"
+operators : + - * / =
+n : 5
+answer : 441

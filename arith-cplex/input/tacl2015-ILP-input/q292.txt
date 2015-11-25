@@ -1,0 +1,5 @@
+quantities : 0.875 0.75 x
+types : "lap" "jogging" "lap"
+operators : + - * / =
+n : 5
+answer : 0.125

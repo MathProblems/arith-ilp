@@ -1,0 +1,5 @@
+quantities : 15 12 x
+types : "dollar" "chair" "dollar"
+operators : + - * / =
+n : 5
+answer : 180.0

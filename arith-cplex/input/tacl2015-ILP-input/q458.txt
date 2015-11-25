@@ -1,0 +1,5 @@
+quantities : 3 1.54 x
+types : "ball" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 4.62

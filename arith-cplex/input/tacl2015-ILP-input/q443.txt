@@ -1,0 +1,5 @@
+quantities : 648 4 x
+types : "pencil" "pencil" "pencil"
+operators : + - * / =
+n : 5
+answer : 162

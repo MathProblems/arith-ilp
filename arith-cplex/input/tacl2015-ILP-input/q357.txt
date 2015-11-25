@@ -1,0 +1,5 @@
+quantities : 1.25 5.25 x
+types : "inch" "inch" "DISTANCE"
+operators : + - * / =
+n : 5
+answer : 6.5

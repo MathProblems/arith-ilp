@@ -1,0 +1,5 @@
+quantities : 14 29 x
+types : "game" "game" "game"
+operators : + - * / =
+n : 5
+answer : 43.0

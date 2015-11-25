@@ -1,0 +1,5 @@
+quantities : 5 2 x
+types : "trout" "Sara" "trout"
+operators : + - * / =
+n : 5
+answer : 10.0

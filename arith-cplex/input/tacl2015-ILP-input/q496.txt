@@ -1,0 +1,5 @@
+quantities : 23 x 45
+types : "pound" "pound" "bag"
+operators : + - * / =
+n : 5
+answer : 1035

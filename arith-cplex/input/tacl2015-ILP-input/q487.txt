@@ -1,0 +1,5 @@
+quantities : 144 3 x
+types : "bee" "Hilt" "bee"
+operators : + - * / =
+n : 5
+answer : 432

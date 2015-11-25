@@ -1,0 +1,5 @@
+quantities : 390 x 30
+types : "student" "classroom" "student"
+operators : + - * / =
+n : 5
+answer : 13.0

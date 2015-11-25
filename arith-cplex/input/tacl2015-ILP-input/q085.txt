@@ -1,0 +1,5 @@
+quantities : 54 22 x
+types : "scissors" "scissors" "scissors"
+operators : + - * / =
+n : 5
+answer : 76.0

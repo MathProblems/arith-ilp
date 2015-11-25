@@ -1,0 +1,5 @@
+quantities : 380 57 x
+types : "lego" "lego" "lego"
+operators : + - * / =
+n : 5
+answer : 323

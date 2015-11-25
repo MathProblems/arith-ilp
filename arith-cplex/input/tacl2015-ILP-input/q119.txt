@@ -1,0 +1,5 @@
+quantities : 192 x 12
+types : "ball" "dozen" "ball"
+operators : + - * / =
+n : 5
+answer : 16.0

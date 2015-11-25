@@ -1,0 +1,5 @@
+quantities : 0.125 0.125 x
+types : "scoop" "scoop" "scoop"
+operators : + - * / =
+n : 5
+answer : 0.25

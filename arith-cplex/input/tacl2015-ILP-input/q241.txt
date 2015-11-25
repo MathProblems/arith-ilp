@@ -1,0 +1,5 @@
+quantities : 48,097 684 x
+types : "bushel" "bushel" "bushel"
+operators : + - * / =
+n : 5
+answer : 48781.0

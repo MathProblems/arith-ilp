@@ -1,0 +1,5 @@
+quantities : 38 44 x
+types : "cantelope" "cantelope" "cantelope"
+operators : + - * / =
+n : 5
+answer : 82.0

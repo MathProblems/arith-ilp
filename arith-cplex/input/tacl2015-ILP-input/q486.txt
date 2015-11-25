@@ -1,0 +1,5 @@
+quantities : 7 5 x 15
+types : "student" "minute" "student" "minute"
+operators : + - * / =
+n : 7
+answer : 21

@@ -1,0 +1,5 @@
+quantities : 8 2 x
+types : "trout" "Melanie" "trout"
+operators : + - * / =
+n : 5
+answer : 16.0

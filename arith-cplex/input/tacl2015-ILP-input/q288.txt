@@ -1,0 +1,5 @@
+quantities : 0.16666666666666666 0.5 x
+types : "mile" "mile" "DISTANCE"
+operators : + - * / =
+n : 5
+answer : 0.6666666666666666

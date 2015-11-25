@@ -1,0 +1,5 @@
+quantities : 375 7 x 4
+types : "student" "bus" "student" "student"
+operators : + - * / =
+n : 7
+answer : 53.0

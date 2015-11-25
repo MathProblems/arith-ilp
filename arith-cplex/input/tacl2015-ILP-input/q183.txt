@@ -1,0 +1,5 @@
+quantities : 6 3 x
+types : "balloon" "Sally" "balloon"
+operators : + - * / =
+n : 5
+answer : 18.0

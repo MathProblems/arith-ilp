@@ -1,0 +1,5 @@
+quantities : 4 x 4.80
+types : "dvd" "dollar" "dollar"
+operators : + - * / =
+n : 5
+answer : 1.20

@@ -1,0 +1,5 @@
+quantities : x 3 6 9
+types : "kitten" "kitten" "kitten" "kitten"
+operators : + - * / =
+n : 7
+answer : 18.0

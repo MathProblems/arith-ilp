@@ -1,0 +1,5 @@
+quantities : 0.25 0.25 0.375 x
+types : "bottle" "bottle" "bottle" "bottle"
+operators : + - * / =
+n : 7
+answer : 0.875

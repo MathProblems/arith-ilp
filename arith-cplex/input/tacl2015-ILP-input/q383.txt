@@ -1,0 +1,5 @@
+quantities : 4 8.7 x
+types : "pound" "pound" "pumpkin"
+operators : + - * / =
+n : 5
+answer : 12.7
