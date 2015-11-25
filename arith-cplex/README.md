@@ -4,7 +4,7 @@ CPLEX based Integer Linear Programming models for arithmetic problems
 Compilation
 -----------
 
-This project requires `CPLEX` libraries and optionally also uses the `SymPy` package in `Python` for evaluating expressions (can be turned off with `--noprintanswer`). To compile:
+This project requires `IBM CPLEX` optimization libraries and optionally also uses the `SymPy` package in `Python` for evaluating expressions (can be turned off with `--noprintanswer`). It has been tested on 64-bit Scientific Linux with g++ 4.4.7. To build:
  
 * copy `Makefile-SAMPLE` to your own local `Makefile` (do not check this
   in, as this will be computer specific)
@@ -13,7 +13,7 @@ This project requires `CPLEX` libraries and optionally also uses the `SymPy` pac
 
 * run `make`
 
-This should produce an executable named `arithCplex`.
+This should produce an executable named `arithCplex`. To build a statically linked executable instead, run `make arithCplex-static`.
 
 
 Usage
@@ -50,6 +50,36 @@ EXPR: 0 | POS | INT | 10 | 24 | 11 | (8+3)=x | 8 3 + x = | 8:calorie 3:calorie +
 EXPR: 0 | POS | INT | 10 | 24 | 11 | x=(8+3) | x 8 3 + = | x:calorie 8:calorie 3:calorie +:calorie =:calorie
 EXPR: 0 | POS | INT | 10 | 24 | 5 | x=(8-3) | x 8 3 - = | x:calorie 8:calorie 3:calorie -:calorie =:calorie
 NET 8 unique, non-negative, integer-valued solutions found out of 25 total solutions
+```
+
+Available command-line options include:
+```
+   -h, --help        print this usage
+
+   --model file      an ILP model file with extension MPS, SAV, or LP (lower case ok; .gz ok; default: none)
+
+   --timelimit num   time limit in seconds (elapsed/wall time; default: none)
+   -t num            same as --timelimit num
+   --memlimit num    memory limit in MB (default: 2048)
+   -m num            same as --memlimit num
+   --threads num     number of parallel threads to use (default: 1)
+   -g percent        stop optimization when optimality gap reaches provided value
+   --log num         report log after every num nodes (default: 0, cplex decides)
+
+   -s num            same as --solutions num
+   --solutions num   number of solutions to find (default: 25)
+   --wts file        config file containing weights in libconfig format (default: weights.conf)
+   --allowdupes      allow duplicate expressions in listed solutions (default: no)
+   --noprintexpr     do not print arithmetic expressions found (forces --noprintexpr; default: on)
+   --noprintanswer   do not print answer to arithmetic problem (default: on)
+   --printsoln       print solution (default: off)
+   --savemodel file  save generated MIP model to file (default: none)
+
+   --rootalg alg     algorithm to use for solving LP
+                        o default, p primal simplex, d dual simplex
+                        b barrier, h barrier with crossover,
+                        n network simplex, s sifting, c concurrent
+   -a alg            same as --rootalg alg
 ```
 
 Convenience Utilities
