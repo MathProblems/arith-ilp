@@ -3,7 +3,7 @@
 //             arithmetic equations over given constants and unknowns, respecting the
 //             given hard and soft constraints; uses ILOG Concert library.
 //
-// Author: Ashish Sabharwal, May 2015
+// Author: Ashish Sabharwal, AI2, November 2015
 //
 // Usage: arithCplex -h   ||   arithCplex --help
 //
@@ -67,7 +67,7 @@ void solveExpressionsWithSymPy(vector<FormattedExpr> & expressions);
 
 // model parameters to be read from the input file
 vector<string> constants, unknowns, operators, objtypes;
-vector<int>    constantOrUnknownType;
+vector<int>    quantityType;
 int            n;
 double         trueAnswer;
 
@@ -515,6 +515,7 @@ void parseInputFile(const string & infilename) {
   cout << "Reading input from file " << infilename << endl;
   std::ifstream infile(infilename);
   string line;
+  int positionOfFirstUnknown = -1;
   while (std::getline(infile, line)) {
     cout << line << endl;
     if (line.empty() || line.substr(0, 2) == "//")
@@ -522,43 +523,65 @@ void parseInputFile(const string & infilename) {
     std::istringstream iss(line);
     string header, word;
     iss >> header;
-    if (header == "constants") {
+    if (header == "quantities") {
       iss >> word; assert(word == ":");
+      int pos = -1;
       while (iss >> word) {
-        // drop commas from the word, e.g., 2,715 turns into 2715
-        size_t pos = 0;
-        while ((pos = word.find(',', pos)) != string::npos)
-          word.erase(pos, 1);
-        if (word == "0")
-          constantIdxZero = constants.size();
-        else if (word == "1")
-          constantIdxOne = constants.size();
-        constants.push_back(word);
-        const double numericalValue = atof(word.c_str());
-        constantValues.push_back(numericalValue);
-        isIntConstant.push_back(isInt(numericalValue));
+        ++pos;
+        // if word doesn't start with a digit, assume it is an unknown
+        if (!std::isdigit(word[0])) {
+          unknowns.push_back(word);
+          positionOfFirstUnknown = pos;
+        }
+        else {
+          // assume it is a numeric constant
+          // drop commas from the word, e.g., 2,715 turns into 2715
+          size_t pos = 0;
+          while ((pos = word.find(',', pos)) != string::npos)
+            word.erase(pos, 1);
+          if (word == "0" || word == "0.0")
+            constantIdxZero = constants.size();
+          else if (word == "1" || word == "1.0")
+            constantIdxOne = constants.size();
+          constants.push_back(word);
+          const double numericalValue = atof(word.c_str());
+          constantValues.push_back(numericalValue);
+          isIntConstant.push_back(isInt(numericalValue));
+        }
       }
-    }
-    else if (header == "unknowns") {
-      iss >> word; assert(word == ":");
-      while (iss >> word) unknowns.push_back(word);
     }
     else if (header == "operators") {
       iss >> word; assert(word == ":");
       while (iss >> word) operators.push_back(word);
-      assert(operators.size() == 5);
+      assert(operators.size() == 5);  // exactly 5 operators expected
     }
-    else if (header == "objtypes") {
+    else if (header == "types") {
       iss >> word; assert(word == ":");
       while (iss >> word) {
-        if (word == "NONE")
-          objtypeIdxNone = objtypes.size();
-        objtypes.push_back(word);
+        // remove quotation marks from the start and end of word
+        if (*word.begin() == '"') word.erase(word.begin());
+        if (*word.rbegin() == '"') word.erase(word.size() - 1);
+        vector<string>::const_iterator itr = std::find(objtypes.begin(), objtypes.end(), word);
+        if (itr == objtypes.end()) {
+          objtypes.push_back(word);
+          if (word == "NONE")
+            objtypeIdxNone = objtypes.size();
+          // reset itr to the last element of objtypes
+          itr = objtypes.end(); --itr;
+        }
+        const int typeIdx = itr - objtypes.begin();
+        quantityType.push_back(typeIdx);
       }
-    }
-    else if (header == "constantOrUnknownType") {
-      iss >> word; assert(word == ":");
-      while (iss >> word) constantOrUnknownType.push_back(atoi(word.c_str()));
+      // currently the model ignores the position of the unknown and treats
+      // it as if it comes after all constants; to align with this, move the
+      // contents of the corresponding entry of quantityType to the end; note
+      // that this is relevant only if objtypes has more than one element
+      if (objtypes.size() > 1) {
+        const int tmp = quantityType[positionOfFirstUnknown];
+        for (unsigned j=positionOfFirstUnknown; j<quantityType.size()-1; j++)
+          quantityType[j] = quantityType[j+1];
+        quantityType[quantityType.size() - 1] = tmp;
+      }
     }
     else if (header == "n") {
       iss >> word; assert(word == ":");
@@ -779,9 +802,9 @@ void buildArithmeticModel(IloModel model, IloObjective obj, IloNumVarArray vars,
     // enforce (potentially error prone) types of base entities
     for (int i=0; i<n; i++) {
       for (int j=0; j<l+k; j++) {
-        if (constantOrUnknownType[j] != objtypeIdxNone) {  // type NONE is a wildcard
+        if (quantityType[j] != objtypeIdxNone) {  // type NONE is a wildcard
           IloNumVar slack(env);
-          model.add((x[i] == j) <= (t[i] == constantOrUnknownType[j]) + slack);
+          model.add((x[i] == j) <= (t[i] == quantityType[j]) + slack);
           objective += slack * consWts["TypeConsistency"];
         }
       }
