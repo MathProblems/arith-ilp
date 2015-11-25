@@ -35,7 +35,7 @@ answer : 24.0
 
 Note that the syntax of this input file is rather brittle. It uses white-space as delimiters and, in particular, expects a white-space on both sides of the `:` character.
 
-The output includes a number of CPLEX related info as well as the number of solutions found. For each solution, it prints information in the format. For the included `example.txt` arithmetic problem file, the output looks like:
+The output includes a number of CPLEX related information as well as the number of solutions found. For each solution, it prints information in a format similar to the following excerpt from the output of `./arithCplex example.txt`:
 
 ```
 parameters: n=5 l=2 k=1 p=5 q=2 m=8
