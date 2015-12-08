@@ -1,10 +1,14 @@
 # arith-cplex
-CPLEX based Integer Linear Programming models for arithmetic problems
+CPLEX based Integer Linear Programming models for arithmetic problems.
 
-Compilation
------------
+Getting Started
+---------------
 
-This project requires `IBM CPLEX` optimization libraries and optionally also uses the `SymPy` package in `Python` for evaluating expressions (can be turned off with `--noprintanswer`). It has been tested on 64-bit Scientific Linux with g++ 4.4.7. To build:
+This project requires `IBM CPLEX` optimization libraries for compilation. It optionally also uses the `SymPy` package in `Python` at runtime for evaluating expressions (can be turned off with `--noprintanswer`). It has been tested on 64-bit Scientific Linux with g++ 4.4.7.
+
+**Compiling**
+
+To build from source:
  
 * copy `Makefile-SAMPLE` to your own local `Makefile` (do not check this
   in, as this will be computer specific)
@@ -14,6 +18,11 @@ This project requires `IBM CPLEX` optimization libraries and optionally also use
 * run `make`
 
 This should produce an executable named `arithCplex`. To build a statically linked executable instead, run `make arithCplex-static`.
+
+**Pre-Compiled Executable**
+
+A statically linked 64-bit Linux executable may be downloaded from
+https://s3-us-west-2.amazonaws.com/ai2-public-websites/algebra/arithCplex-20151124-static
 
 
 Usage
